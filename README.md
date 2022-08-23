@@ -1,2 +1,2 @@
 # 2MASX
-ERP PILOT PROJECT
+ERP Pilot Project
