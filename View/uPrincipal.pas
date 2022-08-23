@@ -1990,6 +1990,7 @@ end;
 
 procedure TfrmPrincipal.FormCreate(Sender: TObject);
 begin
+//
   Dados.vRetaguarda       := true;
 
   VerificaVersao          := true;
