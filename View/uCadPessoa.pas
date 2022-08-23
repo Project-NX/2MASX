@@ -182,7 +182,7 @@ var
 implementation
 
 {$R *.dfm}
-//
+/
 uses uPessoa, Udados, uRotinasComuns, uDmNFe;
 
 procedure TfrmCadPessoa.ACBrCEP1BuscaEfetuada(Sender: TObject);
