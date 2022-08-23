@@ -28,7 +28,7 @@
     Height = 48
     Align = alTop
     BevelOuter = bvNone
-    Color = 2894892
+    Color = 12153715
     ParentBackground = False
     TabOrder = 0
     object lbl_usuario: TLabel
@@ -36,7 +36,7 @@
       Left = 865
       Top = 3
       Width = 44
-      Height = 17
+      Height = 41
       Margins.Left = 0
       Margins.Right = 15
       Align = alRight
@@ -49,6 +49,7 @@
       Font.Style = [fsBold]
       ParentFont = False
       Layout = tlCenter
+      ExplicitHeight = 17
     end
     object Image3: TImage
       Left = 0
@@ -457,18 +458,36 @@
     Width = 208
     Height = 695
     Align = alLeft
+    Color = clWhite
+    Ctl3D = True
     ActiveGroupIndex = 2
     TabOrder = 1
     LookAndFeel.Kind = lfUltraFlat
     LookAndFeel.NativeStyle = True
     View = 21
-    ViewStyle.SkinName = 'Office2019Colorful'
+    ViewStyle.SkinName = 'Office2019DarkGray'
     ViewStyle.SkinNameAssigned = True
     OptionsBehavior.Common.AllowChildGroups = True
     OptionsBehavior.Common.AllowExpandAnimation = True
     OptionsBehavior.Common.AllowMultipleGroupExpansion = False
     OptionsImage.LargeImages = cxImageList1
     OptionsImage.SmallImages = cxImageList2
+    OptionsStyle.DefaultStyles.Background.BackColor = 12615680
+    OptionsStyle.DefaultStyles.Background.BackColor2 = 12615680
+    OptionsStyle.DefaultStyles.Background.Font.Charset = DEFAULT_CHARSET
+    OptionsStyle.DefaultStyles.Background.Font.Color = clWindowText
+    OptionsStyle.DefaultStyles.Background.Font.Height = -11
+    OptionsStyle.DefaultStyles.Background.Font.Name = 'Tahoma'
+    OptionsStyle.DefaultStyles.Background.Font.Style = []
+    OptionsStyle.DefaultStyles.Background.AssignedValues = [savBackColor, savBackColor2]
+    OptionsStyle.DefaultStyles.GroupControl.BackColor = clGray
+    OptionsStyle.DefaultStyles.GroupControl.BackColor2 = clGray
+    OptionsStyle.DefaultStyles.GroupControl.Font.Charset = DEFAULT_CHARSET
+    OptionsStyle.DefaultStyles.GroupControl.Font.Color = clWindowText
+    OptionsStyle.DefaultStyles.GroupControl.Font.Height = -11
+    OptionsStyle.DefaultStyles.GroupControl.Font.Name = 'Tahoma'
+    OptionsStyle.DefaultStyles.GroupControl.Font.Style = []
+    OptionsStyle.DefaultStyles.GroupControl.AssignedValues = [savBackColor, savBackColor2]
     OptionsView.HamburgerMenu.NavigationPaneMode = npmNone
     object inicio: TdxNavBarGroup
       Caption = #205'nicio'

@@ -7,7 +7,7 @@ object frmPessoas: TfrmPessoas
   Caption = 'Contatos'
   ClientHeight = 739
   ClientWidth = 1018
-  Color = 5723991
+  Color = 12153715
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -252,8 +252,16 @@ object frmPessoas: TfrmPessoas
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F3 | Alterar'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -301,8 +309,16 @@ object frmPessoas: TfrmPessoas
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F5 | Atualizar'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -352,8 +368,16 @@ object frmPessoas: TfrmPessoas
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F4 | Imprimir'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -394,8 +418,16 @@ object frmPessoas: TfrmPessoas
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F2 | Novo'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -496,7 +528,7 @@ object frmPessoas: TfrmPessoas
     Top = 139
   end
   object frxReport: TfrxReport
-    Version = '6.8.6'
+    Version = '6.9.12'
     DataSetName = 'frxDBCo'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
@@ -550,6 +582,10 @@ object frmPessoas: TfrmPessoas
       MirrorMode = []
       object PageHeader1: TfrxPageHeader
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 480.000000000000000000
         Top = 18.897650000000000000
@@ -894,6 +930,10 @@ object frmPessoas: TfrmPessoas
       end
       object PageFooter1: TfrxPageFooter
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 480.000000000000000000
         Top = 559.370440000000000000
