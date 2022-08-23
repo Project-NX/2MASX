@@ -12,7 +12,7 @@ uses
   FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf,
   FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet,
   FireDAC.Comp.Client, dxSkinDevExpressDarkStyle, cxGraphics, cxLookAndFeels,
-  cxLookAndFeelPainters, Vcl.Menus, cxButtons;
+  cxLookAndFeelPainters, Vcl.Menus, cxButtons, dxSkinsCore;
 
 type
   TfrmCadPessoa = class(TForm)
@@ -136,6 +136,8 @@ type
     Panel4: TPanel;
     cxSair: TcxButton;
     cxGravar: TcxButton;
+    Panel2: TPanel;
+    Panel5: TPanel;
     procedure BitBtn1Click(Sender: TObject);
     procedure DBImage1Click(Sender: TObject);
     procedure dsClientesDataChange(Sender: TObject; Field: TField);

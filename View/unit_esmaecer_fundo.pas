@@ -8,8 +8,10 @@ uses
 
 type
   Tform_esmaecer_fundo = class(TForm)
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
+    Fteste: string;
   public
     { Public declarations }
   end;
@@ -20,5 +22,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure Tform_esmaecer_fundo.FormCreate(Sender: TObject);
+begin
+///
+end;
 
 end.

@@ -5,7 +5,7 @@ object frmCadPessoa: TfrmCadPessoa
   Caption = 'Sistema ERP - Cadastro de Pessoas'
   ClientHeight = 560
   ClientWidth = 834
-  Color = 5723991
+  Color = 12153715
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -961,6 +961,22 @@ object frmCadPessoa: TfrmCadPessoa
           ParentFont = False
           TabOrder = 17
         end
+        object Panel2: TPanel
+          Left = 336
+          Top = 390
+          Width = 88
+          Height = 38
+          Caption = 'Panel2'
+          TabOrder = 26
+        end
+        object Panel5: TPanel
+          Left = 440
+          Top = 387
+          Width = 88
+          Height = 38
+          Caption = 'Panel2'
+          TabOrder = 27
+        end
       end
     end
     object TabSheet6: TTabSheet
@@ -1482,8 +1498,14 @@ object frmCadPessoa: TfrmCadPessoa
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'ESC | Sair'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -1524,8 +1546,15 @@ object frmCadPessoa: TfrmCadPessoa
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F5 | Salvar'
+      Colors.Default = 16744576
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Pressed = 12153715
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098

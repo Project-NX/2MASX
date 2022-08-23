@@ -22,7 +22,7 @@ uses
   dxTileBar, cxClasses, dxNavBarBase, dxNavBarCollns, cxImageList,
    dxNavBarOfficeNavigationBar, dxStatusBar, dxNavBarGroupItems,
   cxContainer, cxEdit, dxGDIPlusClasses, cxImage, cxButtons, cxPC, dxTabbedMDI,
-  dxCalloutPopup, dxSkinOffice2019Colorful, dxSkinDevExpressDarkStyle,
+  dxCalloutPopup,  dxSkinDevExpressDarkStyle,
   dxSkinOffice2019DarkGray;
 
 type
@@ -1990,11 +1990,11 @@ end;
 
 procedure TfrmPrincipal.FormCreate(Sender: TObject);
 begin
-  Dados.vRetaguarda := true;
+  Dados.vRetaguarda       := true;
 
-  VerificaVersao := true;
-  Dados.FVerificouOnline := false;
-  Dados.vFechaPrograma := false;
+  VerificaVersao          := true;
+  Dados.FVerificouOnline  := false;
+  Dados.vFechaPrograma    := false;
   Dados.FVerificaValidade := true;
 
   CarregaTabelas;
