@@ -1,0 +1,20 @@
+object form_esmaecer_fundo: Tform_esmaecer_fundo
+  Left = 0
+  Top = 0
+  Align = alClient
+  AlphaBlend = True
+  AlphaBlendValue = 210
+  BorderStyle = bsNone
+  ClientHeight = 633
+  ClientWidth = 850
+  Color = 11382189
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  WindowState = wsMaximized
+  PixelsPerInch = 96
+  TextHeight = 13
+end

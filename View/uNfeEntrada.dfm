@@ -1,0 +1,915 @@
+object frmNFeEntrada: TfrmNFeEntrada
+  Left = 0
+  Top = 0
+  Caption = 'Entrada de Nota Fiscal por XML'
+  ClientHeight = 457
+  ClientWidth = 950
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 0
+    Width = 950
+    Height = 457
+    ActivePage = tabImportar
+    Align = alClient
+    TabOrder = 0
+    ExplicitWidth = 833
+    object tabImportar: TTabSheet
+      Caption = 'Importa'#231#227'o'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 825
+      ExplicitHeight = 0
+      object Panel1: TPanel
+        Left = 0
+        Top = 0
+        Width = 942
+        Height = 82
+        Align = alTop
+        BevelOuter = bvNone
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Courier New'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+        ExplicitTop = 8
+        ExplicitWidth = 825
+        object Label1: TLabel
+          Left = 286
+          Top = 41
+          Width = 55
+          Height = 13
+          Caption = 'Fornecedor'
+          FocusControl = DBEdit1
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label3: TLabel
+          Left = 679
+          Top = 2
+          Width = 64
+          Height = 13
+          Caption = 'Data Entrada'
+          FocusControl = DBEdit3
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label4: TLabel
+          Left = 768
+          Top = 2
+          Width = 64
+          Height = 13
+          Caption = 'Data Emiss'#227'o'
+          FocusControl = DBEdit4
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label5: TLabel
+          Left = 854
+          Top = 42
+          Width = 52
+          Height = 13
+          Caption = 'Nota Fiscal'
+          FocusControl = DBEdit5
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label7: TLabel
+          Left = 208
+          Top = 2
+          Width = 53
+          Height = 13
+          Caption = 'Chave NFe'
+          FocusControl = DBEdit7
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label9: TLabel
+          Left = 679
+          Top = 41
+          Width = 25
+          Height = 13
+          Caption = 'CNPJ'
+          FocusControl = DBEdit10
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object Label29: TLabel
+          Left = 826
+          Top = 43
+          Width = 13
+          Height = 13
+          Caption = 'UF'
+          FocusControl = DBEdit10
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object btnImportar: TSpeedButton
+          Left = 0
+          Top = 0
+          Width = 95
+          Height = 82
+          Align = alLeft
+          Caption = 'Importar via XML'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          Glyph.Data = {
+            520E0000424D520E00000000000042000000280000001E0000001E0000000100
+            200003000000100E0000000000000000000000000000000000000000FF0000FF
+            0000FF0000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000049000000E30000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000E200000048000000000000000000000000000000000000
+            0000000000000000000000000000000000E3000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000E20000000000000000000000000000000000000000000000000000
+            000000000000000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF00000000000000000000
+            00000000000000000000000000000000000000000000000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000000000000000000000000000000000
+            0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF0000000000000000000000000000000000000000000000000000
+            000000000000000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF00000000000000000000
+            00000000000000000000000000000000000000000000000000FF000000F80000
+            002500000044000000FF0000007E00000003000000CB00000095000000020000
+            00FF0000009F000000C1000000C000000000000000D600000092000000000000
+            0000000000000000005C000000FF000000000000000000000000000000000000
+            0000000000000000000000000000000000FF000000FF000000B9000000000000
+            00850000000800000070000000FF0000009500000002000000F10000000B0000
+            003C000000C000000000000000D60000009200000000000000A9000000BB0000
+            00D3000000FF0000000000000000000000000000000000000000000000000000
+            000000000000000000FF000000FF000000FF00000056000000000000001E0000
+            00F3000000FF000000950000000200000095000000300000000B000000960000
+            0000000000D60000009200000000000000E7000000FF000000FF000000FF0000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00FF000000FF000000FF0000005B000000000000001F000000F3000000FF0000
+            0095000000020000002E000000A0000000600000002E00000000000000D60000
+            009200000000000000E7000000FF000000FF000000FF00000000000000000000
+            00000000000000000000000000000000000000000000000000FF000000FF0000
+            00C00000000100000089000000130000006F000000FF00000095000000000000
+            000F000000F5000000C50000000000000000000000D600000092000000000000
+            00E7000000FF000000FF000000FF000000000000000000000000000000000000
+            0000000000000000000000000000000000FF000000F800000028000000270000
+            00FB0000008E00000002000000C500000095000000000000006C000000FF0000
+            00FF0000002C00000000000000D60000009200000000000000E7000000FF0000
+            00FF000000FF0000000000000000000000000000000000000000000000000000
+            000000000000000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF00000000000000000000
+            00000000000000000000000000000000000000000000000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000000000000000000000000000000000
+            0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF0000000000000000000000000000000000000000000000000000
+            000000000000000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF00000000000000000000
+            00000000000000000000000000000000000000000000000000E3000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000E2000000000000000000000000000000000000
+            00000000000000000000000000000000004B000000E4000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00E3000000490000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000}
+          Layout = blGlyphTop
+          ParentFont = False
+          OnClick = btnImportarClick
+        end
+        object btnFinalizar: TSpeedButton
+          Left = 95
+          Top = 0
+          Width = 95
+          Height = 82
+          Align = alLeft
+          Caption = 'Finalizar Imp.'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          Glyph.Data = {
+            520E0000424D520E00000000000042000000280000001E0000001E0000000100
+            200003000000100E0000000000000000000000000000000000000000FF0000FF
+            0000FF0000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000016000000CB000000C20000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000016000000D3000000FF000000CB00000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000150000
+            00D2000000FF000000D700000019000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            000000000000000000000000000000000015000000D2000000FF000000D70000
+            0019000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000049000000E30000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            001A00000000000000CB000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000C20000
+            0000000000000000000000000000000000E3000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF00000018000000000000
+            00CB000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000C400000000000000000000
+            000000000000000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000780000000000000015000000D30000
+            00FF000000D30000001600000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000F8000000490000000000000016000000D3000000FF0000
+            00D3000000160000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000F8000000490000000000000016000000D3000000FF000000CB0000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000C5000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00F8000000490000000000000016000000CC000000C300000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000000000C3000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000C2000000000000000000000000000000000000
+            0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF0000000000000000000000000000000000000000000000000000
+            000000000000000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF00000000000000000000
+            00000000000000000000000000000000000000000000000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000000000000000000000000000000000
+            0000000000000000000000000000000000C5000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000C30000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000000000C3000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000C2000000000000000000000000000000000000
+            0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF0000000000000000000000000000000000000000000000000000
+            000000000000000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF00000000000000000000
+            00000000000000000000000000000000000000000000000000E3000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000E2000000000000000000000000000000000000
+            00000000000000000000000000000000004B000000E4000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+            00E3000000490000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            00000000000000000000000000000000000000000000}
+          Layout = blGlyphTop
+          ParentFont = False
+        end
+        object Label8: TLabel
+          Left = 208
+          Top = 41
+          Width = 27
+          Height = 13
+          Caption = 'CFOP'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object DBEdit1: TDBEdit
+          Left = 286
+          Top = 55
+          Width = 33
+          Height = 22
+          TabStop = False
+          Color = 15724527
+          Ctl3D = False
+          DataField = 'ID_FORNECEDOR'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlue
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentCtl3D = False
+          ParentFont = False
+          ReadOnly = True
+          TabOrder = 0
+        end
+        object DBEdit3: TDBEdit
+          Left = 678
+          Top = 18
+          Width = 85
+          Height = 22
+          Ctl3D = False
+          DataField = 'DATA_ENTRADA'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlue
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentColor = True
+          ParentCtl3D = False
+          ParentFont = False
+          TabOrder = 1
+        end
+        object DBEdit4: TDBEdit
+          Left = 768
+          Top = 18
+          Width = 85
+          Height = 22
+          TabStop = False
+          Ctl3D = False
+          DataField = 'DATA_EMISSAO_NF'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlue
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentColor = True
+          ParentCtl3D = False
+          ParentFont = False
+          ReadOnly = True
+          TabOrder = 2
+        end
+        object DBEdit5: TDBEdit
+          Left = 854
+          Top = 55
+          Width = 76
+          Height = 22
+          TabStop = False
+          Ctl3D = False
+          DataField = 'NOTA_FISCAL'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlue
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentColor = True
+          ParentCtl3D = False
+          ParentFont = False
+          ReadOnly = True
+          TabOrder = 3
+        end
+        object DBEdit7: TDBEdit
+          Left = 208
+          Top = 18
+          Width = 465
+          Height = 22
+          TabStop = False
+          Ctl3D = False
+          DataField = 'CHAVE'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlue
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentColor = True
+          ParentCtl3D = False
+          ParentFont = False
+          ReadOnly = True
+          TabOrder = 4
+        end
+        object DBEdit9: TDBEdit
+          Left = 325
+          Top = 55
+          Width = 348
+          Height = 22
+          TabStop = False
+          Ctl3D = False
+          DataField = 'VIRTUAL_FORNECEDOR'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlue
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentColor = True
+          ParentCtl3D = False
+          ParentFont = False
+          ReadOnly = True
+          TabOrder = 5
+        end
+        object DBEdit10: TDBEdit
+          Left = 679
+          Top = 55
+          Width = 140
+          Height = 22
+          TabStop = False
+          Ctl3D = False
+          DataField = 'VIRTUAL_CNPJ'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlue
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentColor = True
+          ParentCtl3D = False
+          ParentFont = False
+          ReadOnly = True
+          TabOrder = 6
+        end
+        object DBEdit11: TDBEdit
+          Left = 825
+          Top = 55
+          Width = 23
+          Height = 22
+          TabStop = False
+          Ctl3D = False
+          DataField = 'VITUAL_UF'
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlue
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          ParentColor = True
+          ParentCtl3D = False
+          ParentFont = False
+          TabOrder = 7
+        end
+        object DBLookupComboboxEh4: TDBLookupComboboxEh
+          Left = 208
+          Top = 55
+          Width = 71
+          Height = 22
+          Ctl3D = False
+          ParentCtl3D = False
+          DynProps = <>
+          DataField = 'CFOP'
+          DropDownBox.AutoDrop = True
+          DropDownBox.ShowTitles = True
+          EditButtons = <>
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clBlue
+          Font.Height = -12
+          Font.Name = 'Segoe UI'
+          Font.Style = []
+          KeyField = 'CODIGO'
+          ListField = 'CODIGO'
+          ParentFont = False
+          Style = csDropDownEh
+          TabOrder = 8
+          Visible = True
+        end
+      end
+    end
+  end
+  object ACBrNFe1: TACBrNFe
+    Configuracoes.Geral.SSLLib = libNone
+    Configuracoes.Geral.SSLCryptLib = cryNone
+    Configuracoes.Geral.SSLHttpLib = httpNone
+    Configuracoes.Geral.SSLXmlSignLib = xsNone
+    Configuracoes.Geral.FormatoAlerta = 'TAG:%TAGNIVEL% ID:%ID%/%TAG%(%DESCRICAO%) - %MSG%.'
+    Configuracoes.Arquivos.OrdenacaoPath = <>
+    Configuracoes.WebServices.UF = 'SP'
+    Configuracoes.WebServices.AguardarConsultaRet = 0
+    Configuracoes.WebServices.QuebradeLinha = '|'
+    Configuracoes.RespTec.IdCSRT = 0
+    Left = 492
+    Top = 272
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 564
+    Top = 264
+  end
+  object qryFornecedor: TFDQuery
+    Connection = Dados.Conexao
+    SQL.Strings = (
+      'select * from pessoa'
+      'where'
+      'cnpj=:cnpj')
+    Left = 592
+    Top = 184
+    ParamData = <
+      item
+        Name = 'CNPJ'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 20
+        Value = Null
+      end>
+    object qryFornecedorEMPRESA: TSmallintField
+      FieldName = 'EMPRESA'
+      Origin = 'EMPRESA'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryFornecedorCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryFornecedorTIPO: TStringField
+      FieldName = 'TIPO'
+      Origin = 'TIPO'
+      Required = True
+      Size = 10
+    end
+    object qryFornecedorCNPJ: TStringField
+      FieldName = 'CNPJ'
+      Origin = 'CNPJ'
+      Required = True
+    end
+    object qryFornecedorIE: TStringField
+      FieldName = 'IE'
+      Origin = 'IE'
+      Required = True
+    end
+    object qryFornecedorFANTASIA: TStringField
+      FieldName = 'FANTASIA'
+      Origin = 'FANTASIA'
+      Required = True
+      Size = 50
+    end
+    object qryFornecedorRAZAO: TStringField
+      FieldName = 'RAZAO'
+      Origin = 'RAZAO'
+      Required = True
+      Size = 100
+    end
+    object qryFornecedorENDERECO: TStringField
+      FieldName = 'ENDERECO'
+      Origin = 'ENDERECO'
+      Required = True
+      Size = 50
+    end
+    object qryFornecedorNUMERO: TStringField
+      FieldName = 'NUMERO'
+      Origin = 'NUMERO'
+      Required = True
+      Size = 10
+    end
+    object qryFornecedorCOMPLEMENTO: TStringField
+      FieldName = 'COMPLEMENTO'
+      Origin = 'COMPLEMENTO'
+      Size = 50
+    end
+    object qryFornecedorCODMUN: TIntegerField
+      FieldName = 'CODMUN'
+      Origin = 'CODMUN'
+      Required = True
+    end
+    object qryFornecedorMUNICIPIO: TStringField
+      FieldName = 'MUNICIPIO'
+      Origin = 'MUNICIPIO'
+      Required = True
+      Size = 35
+    end
+    object qryFornecedorBAIRRO: TStringField
+      FieldName = 'BAIRRO'
+      Origin = 'BAIRRO'
+      Required = True
+      Size = 35
+    end
+    object qryFornecedorUF: TStringField
+      FieldName = 'UF'
+      Origin = 'UF'
+      Required = True
+      Size = 2
+    end
+    object qryFornecedorCEP: TStringField
+      FieldName = 'CEP'
+      Origin = 'CEP'
+      Required = True
+      Size = 8
+    end
+    object qryFornecedorFONE1: TStringField
+      FieldName = 'FONE1'
+      Origin = 'FONE1'
+      Size = 14
+    end
+    object qryFornecedorFONE2: TStringField
+      FieldName = 'FONE2'
+      Origin = 'FONE2'
+      Size = 14
+    end
+    object qryFornecedorCELULAR1: TStringField
+      FieldName = 'CELULAR1'
+      Origin = 'CELULAR1'
+      Size = 14
+    end
+    object qryFornecedorCELULAR2: TStringField
+      FieldName = 'CELULAR2'
+      Origin = 'CELULAR2'
+      Size = 14
+    end
+    object qryFornecedorEMAIL1: TStringField
+      FieldName = 'EMAIL1'
+      Origin = 'EMAIL1'
+      Size = 60
+    end
+    object qryFornecedorEMAIL2: TStringField
+      FieldName = 'EMAIL2'
+      Origin = 'EMAIL2'
+      Size = 60
+    end
+    object qryFornecedorFOTO: TBlobField
+      FieldName = 'FOTO'
+      Origin = 'FOTO'
+    end
+    object qryFornecedorSEXO: TStringField
+      FieldName = 'SEXO'
+      Origin = 'SEXO'
+      Size = 10
+    end
+    object qryFornecedorDT_NASC: TDateField
+      FieldName = 'DT_NASC'
+      Origin = 'DT_NASC'
+    end
+    object qryFornecedorECIVIL: TStringField
+      FieldName = 'ECIVIL'
+      Origin = 'ECIVIL'
+      Size = 10
+    end
+    object qryFornecedorDIA_PGTO: TSmallintField
+      FieldName = 'DIA_PGTO'
+      Origin = 'DIA_PGTO'
+    end
+    object qryFornecedorOBS: TMemoField
+      FieldName = 'OBS'
+      Origin = 'OBS'
+      BlobType = ftMemo
+    end
+    object qryFornecedorNUM_USU: TSmallintField
+      FieldName = 'NUM_USU'
+      Origin = 'NUM_USU'
+    end
+    object qryFornecedorFATURA: TStringField
+      FieldName = 'FATURA'
+      Origin = 'FATURA'
+      Size = 1
+    end
+    object qryFornecedorCHEQUE: TStringField
+      FieldName = 'CHEQUE'
+      Origin = 'CHEQUE'
+      Size = 1
+    end
+    object qryFornecedorCCF: TStringField
+      FieldName = 'CCF'
+      Origin = 'CCF'
+      Size = 1
+    end
+    object qryFornecedorSPC: TStringField
+      FieldName = 'SPC'
+      Origin = 'SPC'
+      Size = 1
+    end
+    object qryFornecedorISENTO: TStringField
+      FieldName = 'ISENTO'
+      Origin = 'ISENTO'
+      Size = 1
+    end
+    object qryFornecedorFORN: TStringField
+      FieldName = 'FORN'
+      Origin = 'FORN'
+      Required = True
+      Size = 1
+    end
+    object qryFornecedorFUN: TStringField
+      FieldName = 'FUN'
+      Origin = 'FUN'
+      Required = True
+      Size = 1
+    end
+    object qryFornecedorCLI: TStringField
+      FieldName = 'CLI'
+      Origin = 'CLI'
+      Required = True
+      Size = 1
+    end
+    object qryFornecedorFAB: TStringField
+      FieldName = 'FAB'
+      Origin = 'FAB'
+      Required = True
+      Size = 1
+    end
+    object qryFornecedorTRAN: TStringField
+      FieldName = 'TRAN'
+      Origin = 'TRAN'
+      Required = True
+      Size = 1
+    end
+    object qryFornecedorADM: TStringField
+      FieldName = 'ADM'
+      Origin = 'ADM'
+      Required = True
+      Size = 1
+    end
+    object qryFornecedorATIVO: TStringField
+      FieldName = 'ATIVO'
+      Origin = 'ATIVO'
+      Required = True
+      Size = 1
+    end
+    object qryFornecedorDT_ADMISSAO: TDateField
+      FieldName = 'DT_ADMISSAO'
+      Origin = 'DT_ADMISSAO'
+    end
+    object qryFornecedorDT_DEMISSAO: TDateField
+      FieldName = 'DT_DEMISSAO'
+      Origin = 'DT_DEMISSAO'
+    end
+    object qryFornecedorLIMITE: TFMTBCDField
+      FieldName = 'LIMITE'
+      Origin = 'LIMITE'
+      Precision = 18
+      Size = 2
+    end
+    object qryFornecedorSALARIO: TFMTBCDField
+      FieldName = 'SALARIO'
+      Origin = 'SALARIO'
+      Precision = 18
+      Size = 2
+    end
+    object qryFornecedorPAI: TStringField
+      FieldName = 'PAI'
+      Origin = 'PAI'
+      Size = 50
+    end
+    object qryFornecedorMAE: TStringField
+      FieldName = 'MAE'
+      Origin = 'MAE'
+      Size = 50
+    end
+    object qryFornecedorBANCO: TStringField
+      FieldName = 'BANCO'
+      Origin = 'BANCO'
+      Size = 30
+    end
+    object qryFornecedorAGENCIA: TStringField
+      FieldName = 'AGENCIA'
+      Origin = 'AGENCIA'
+    end
+    object qryFornecedorGERENTE: TStringField
+      FieldName = 'GERENTE'
+      Origin = 'GERENTE'
+      Size = 30
+    end
+    object qryFornecedorFONE_GERENTE: TStringField
+      FieldName = 'FONE_GERENTE'
+      Origin = 'FONE_GERENTE'
+      Size = 15
+    end
+    object qryFornecedorPROPRIEDADE: TStringField
+      FieldName = 'PROPRIEDADE'
+      Origin = 'PROPRIEDADE'
+      Size = 50
+    end
+    object qryFornecedorDT_CADASTRO: TDateField
+      FieldName = 'DT_CADASTRO'
+      Origin = 'DT_CADASTRO'
+      Required = True
+    end
+    object qryFornecedorTECNICO: TStringField
+      FieldName = 'TECNICO'
+      Origin = 'TECNICO'
+      Size = 1
+    end
+    object qryFornecedorATENDENTE: TStringField
+      FieldName = 'ATENDENTE'
+      Origin = 'ATENDENTE'
+      Size = 1
+    end
+  end
+end

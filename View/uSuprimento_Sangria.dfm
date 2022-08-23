@@ -1,0 +1,1160 @@
+object FrmSuprimento_Sangria: TFrmSuprimento_Sangria
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = 'Sangria / Retirada'
+  ClientHeight = 301
+  ClientWidth = 442
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 442
+    Height = 217
+    Align = alClient
+    TabOrder = 0
+    object Label2: TLabel
+      Left = 30
+      Top = 62
+      Width = 40
+      Height = 16
+      Caption = 'Valor'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Courier New'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label1: TLabel
+      Left = 30
+      Top = 16
+      Width = 72
+      Height = 16
+      Caption = 'Hist'#243'rico'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Courier New'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label17: TLabel
+      Left = 30
+      Top = 103
+      Width = 112
+      Height = 16
+      Alignment = taRightJustify
+      Caption = 'Tipo de Contas'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Courier New'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 30
+      Top = 148
+      Width = 168
+      Height = 16
+      Alignment = taRightJustify
+      Caption = 'Destino do Lan'#231'amento'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Courier New'
+      Font.Style = []
+      ParentFont = False
+    end
+    object DBEditEh2: TDBEditEh
+      Left = 30
+      Top = 33
+      Width = 379
+      Height = 22
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'HISTORICO'
+      DataSource = dsCaixa
+      DynProps = <>
+      EditButtons = <>
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold]
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 0
+      Visible = True
+    end
+    object DBEditEh1: TDBEditEh
+      Left = 30
+      Top = 78
+      Width = 121
+      Height = 22
+      CharCase = ecUpperCase
+      Ctl3D = False
+      DataField = 'ENTRADA'
+      DataSource = dsCaixa
+      DynProps = <>
+      EditButtons = <>
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold]
+      ParentCtl3D = False
+      ParentFont = False
+      TabOrder = 1
+      Visible = True
+    end
+    object DBLookupCombobox1: TDBLookupComboboxEh
+      Left = 30
+      Top = 121
+      Width = 379
+      Height = 22
+      Ctl3D = False
+      ParentCtl3D = False
+      DynProps = <>
+      DataField = ''
+      DropDownBox.AutoDrop = True
+      EditButtons = <>
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold]
+      KeyField = 'CODIGO'
+      ListField = 'DESCRICAO'
+      ListSource = dsPlano
+      ParentFont = False
+      TabOrder = 2
+      Visible = True
+    end
+    object cbTipo: TComboBox
+      Left = 30
+      Top = 164
+      Width = 211
+      Height = 22
+      Style = csDropDownList
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold]
+      ItemIndex = 0
+      ParentFont = False
+      TabOrder = 3
+      Text = 'SANGRIA P/ CAIXA GERAL'
+      Items.Strings = (
+        'SANGRIA P/ CAIXA GERAL'
+        'RETIRADA DE DINHEIRO')
+    end
+  end
+  object Panel4: TPanel
+    Left = 0
+    Top = 217
+    Width = 442
+    Height = 84
+    Align = alBottom
+    BevelOuter = bvNone
+    Color = 15395562
+    ParentBackground = False
+    TabOrder = 1
+    object btnGravar: TSpeedButton
+      Left = 15
+      Top = 6
+      Width = 80
+      Height = 70
+      Caption = 'F10 | Gravar'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      Glyph.Data = {
+        520E0000424D520E00000000000042000000280000001E0000001E0000000100
+        200003000000100E0000000000000000000000000000000000000000FF0000FF
+        0000FF0000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000049000000E30000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000E200000048000000000000000000000000000000000000
+        0000000000000000000000000000000000E3000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000E20000000000000000000000000000000000000000000000000000
+        000000000000000000FF000000FF000000FF000000FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00FF000000FF000000FF000000FF000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000FF000000FF000000FF000000FF00000000000000000000
+        00000000000000000000000000000000000000000000000000FF000000FF0000
+        00FF000000FF0000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00FF000000FF000000FF000000FF000000000000000000000000000000000000
+        0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000000000FF000000FF0000
+        00FF000000FF0000000000000000000000000000000000000000000000000000
+        000000000000000000FF000000FF000000FF000000FF00000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00FF000000FF000000FF000000FF000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000FF000000FF000000FF000000FF00000000000000000000
+        00000000000000000000000000000000000000000000000000FF000000FF0000
+        00FF000000FF0000001C00000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000000000000000001D0000
+        00FF000000FF000000FF000000FF000000000000000000000000000000000000
+        0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+        00B40000001B0000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000001C000000B6000000FF000000FF0000
+        00FF000000FF0000000000000000000000000000000000000000000000000000
+        000000000000000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF00000000000000000000
+        00000000000000000000000000000000000000000000000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000000000000000000000000000000000
+        0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF0000000000000000000000000000000000000000000000000000
+        000000000000000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00FF000000FF000000FF000000FF000000FF0000003C00000000000000000000
+        00000000000000000000000000000000000000000000000000000000003D0000
+        00FF000000FF000000FF000000FF000000FF000000FF00000000000000000000
+        00000000000000000000000000000000000000000000000000FF000000FF0000
+        00FF000000FF000000FF00000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000000000000000000000000000000000
+        0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+        00FF000000000000000000000000000000000000000000000000000000000000
+        00FF000000FF0000000000000000000000FF000000FF000000FF000000FF0000
+        00FF000000FF0000000000000000000000000000000000000000000000000000
+        000000000000000000FF000000FF000000FF000000FF000000FF000000000000
+        00000000000000000000000000000000000000000000000000FF000000FF0000
+        000000000000000000FF000000FF000000FF000000FF000000FF000000880000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00FF000000FF000000FF000000FF000000FF0000000000000000000000000000
+        0000000000000000000000000000000000FF000000FF00000000000000000000
+        00FF000000FF000000FF000000FF000000880000000000000000000000000000
+        00000000000000000000000000000000000000000000000000E3000000FF0000
+        00FF000000FF000000FF00000000000000000000000000000000000000000000
+        000000000000000000FF000000FF0000000000000000000000FF000000FF0000
+        00FF000000800000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000004B000000E4000000FF000000FF0000
+        00FF000000000000000000000000000000000000000000000000000000000000
+        00FF000000FF0000000000000000000000FF000000FF00000080000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000}
+      Layout = blGlyphTop
+      ParentFont = False
+      OnClick = btnGravarClick
+    end
+    object btnCancelar: TSpeedButton
+      Left = 101
+      Top = 6
+      Width = 80
+      Height = 70
+      Caption = 'Esc | Cancelar'
+      Flat = True
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      Glyph.Data = {
+        520E0000424D520E00000000000042000000280000001E0000001E0000000100
+        200003000000100E0000000000000000000000000000000000000000FF0000FF
+        0000FF0000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000001D000000AA000000F1000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00F1000000A90000001C00000000000000000000000000000000000000000000
+        0027000000EE000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00EC0000001C00000000000000000000000000000000000000AF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000A90000
+        0000000000000000000000000000000000F2000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000F000000000000000000000
+        000000000000000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000000000000000000000000000000000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF00000000000000000000000000000000000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+        00FF0000008200000022000000220000002200000023000000FF000000B60000
+        00260000000800000034000000D0000000FF000000A1000000200000000C0000
+        0058000000F6000000FF000000FF000000FF000000FF00000000000000000000
+        000000000000000000FF000000FF000000FF000000FF000000FF0000006F0000
+        0015000000AA000000AA000000AA000000FF0000008700000090000000EC0000
+        00390000004D000000E2000000060000007A000000C100000020000000990000
+        00FF000000FF000000FF000000FF000000000000000000000000000000000000
+        00FF000000FF000000FF000000FF000000FF0000006F00000020000000FF0000
+        00FF000000FF000000FF000000E3000000670000002400000001000000890000
+        00B200000000000000E8000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF00000000000000000000000000000000000000FF000000FF0000
+        00FF000000FF000000FF0000006F0000000000000000000000000000002E0000
+        00FF0000005600000025000000A4000000D8000000F4000000C1000000000000
+        00CF000000FF00000098000000C4000000FF000000FF000000FF000000FF0000
+        0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+        00FF0000006F0000001C000000DD000000DD000000E3000000FF0000007B0000
+        00160000006B0000001000000091000000FB000000310000001D0000003F0000
+        0005000000CA000000FF000000FF000000FF000000FF00000000000000000000
+        000000000000000000FF000000FF000000FF000000FF000000FF0000006F0000
+        001A000000CC000000CC000000CC000000FF000000FC000000AF000000880000
+        00B3000000FE000000FF000000F5000000A00000008E000000D4000000FF0000
+        00FF000000FF000000FF000000FF000000000000000000000000000000000000
+        00FF000000FF000000FF000000FF000000FF0000006F00000000000000000000
+        000000000001000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF00000000000000000000000000000000000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        0000000000000000000000000000000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF00000000000000000000
+        000000000000000000F2000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000F1000000000000000000000000000000000000
+        00AC000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000AA000000000000000000000000000000000000001D000000ED0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000EE0000001D0000
+        0000000000000000000000000000000000000000001D000000AC000000F20000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF0000
+        00FF000000FF000000F2000000AF000000270000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000}
+      Layout = blGlyphTop
+      ParentFont = False
+      OnClick = btnCancelarClick
+    end
+  end
+  object dsCaixa: TDataSource
+    DataSet = qryConta_Movimento
+    Left = 216
+    Top = 120
+  end
+  object qrySaldo: TFDQuery
+    Connection = Dados.Conexao
+    SQL.Strings = (
+      'SELECT SUM(ENTRADA-SAIDA) AS TOTAL FROM('
+      
+        'select  sum(CM.entrada) AS ENTRADA, SUM(0) AS SAIDA  from contas' +
+        '_movimento cm'
+      'where'
+      'cm.id_usuario=:id and'
+      'cm.lote=:lote  and'
+      'cm.fkvenda=0'
+      ''
+      ''
+      'UNION ALL'
+      ''
+      
+        'select sum(crr.valor_recebido) AS ENTRADA, SUM(0) AS SAIDA  from' +
+        ' crrecebimento crr'
+      'left join creceber cr on cr.codigo=crr.fkreceber'
+      'left join pessoa pes on pes.codigo=cr.fkcliente'
+      'left join  forma_pagamento fpg on fpg.codigo=crr.fk_forma_pgto'
+      'where'
+      'crr.fkusuario=:id and'
+      'crr.id_subcaixa=:lote'
+      ''
+      'UNION ALL'
+      ''
+      ''
+      
+        'select SUM(0) AS ENTRADA, sum(CM.saida)  from contas_movimento c' +
+        'm'
+      'where'
+      'cm.id_usuario=:id and'
+      'cm.lote=:lote  and'
+      'cm.fkvenda=0'
+      ''
+      'UNION ALL'
+      ''
+      
+        'select sum(vf.valor) AS ENTRADA, SUM(0) AS SAIDA  from contas_mo' +
+        'vimento cm'
+      'left join  vendas_fpg vf on cm.fkvenda=vf.vendas_master'
+      'left join  forma_pagamento fpg on fpg.codigo=vf.id_forma'
+      'where'
+      'cm.id_usuario=:id and'
+      'cm.lote=:lote  and'
+      'vf.valor>0  and'
+      'fpg.tipo='#39'D'#39' and'
+      'cm.fkvenda>0'
+      ')')
+    Left = 272
+    Top = 120
+    ParamData = <
+      item
+        Name = 'ID'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'LOTE'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+    object qrySaldoTOTAL: TFMTBCDField
+      AutoGenerateValue = arDefault
+      FieldName = 'TOTAL'
+      Origin = 'TOTAL'
+      ProviderFlags = []
+      ReadOnly = True
+      Precision = 18
+      Size = 2
+    end
+  end
+  object qryConta_Movimento: TFDQuery
+    BeforePost = qryConta_MovimentoBeforePost
+    AfterPost = qryConta_MovimentoAfterPost
+    Connection = Dados.Conexao
+    SQL.Strings = (
+      'select * from contas_movimento'
+      'where'
+      'lote=:lote and id_conta_caixa=:id'
+      'order by 1')
+    Left = 216
+    Top = 64
+    ParamData = <
+      item
+        Name = 'LOTE'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'ID'
+        DataType = ftInteger
+        ParamType = ptInput
+      end>
+    object qryConta_MovimentoCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryConta_MovimentoID_CONTA_CAIXA: TIntegerField
+      FieldName = 'ID_CONTA_CAIXA'
+      Origin = 'ID_CONTA_CAIXA'
+    end
+    object qryConta_MovimentoDATA: TDateField
+      FieldName = 'DATA'
+      Origin = '"DATA"'
+    end
+    object qryConta_MovimentoHORA: TTimeField
+      FieldName = 'HORA'
+      Origin = 'HORA'
+    end
+    object qryConta_MovimentoFKVENDA: TIntegerField
+      FieldName = 'FKVENDA'
+      Origin = 'FKVENDA'
+    end
+    object qryConta_MovimentoLOTE: TIntegerField
+      FieldName = 'LOTE'
+      Origin = 'LOTE'
+    end
+    object qryConta_MovimentoID_USUARIO: TIntegerField
+      FieldName = 'ID_USUARIO'
+      Origin = 'ID_USUARIO'
+    end
+    object qryConta_MovimentoHISTORICO: TStringField
+      FieldName = 'HISTORICO'
+      Origin = 'HISTORICO'
+      Size = 50
+    end
+    object qryConta_MovimentoENTRADA: TFMTBCDField
+      FieldName = 'ENTRADA'
+      Origin = 'ENTRADA'
+      DisplayFormat = ',0.00'
+      Precision = 18
+      Size = 2
+    end
+    object qryConta_MovimentoSAIDA: TFMTBCDField
+      FieldName = 'SAIDA'
+      Origin = 'SAIDA'
+      DisplayFormat = ',0.00'
+      Precision = 18
+      Size = 2
+    end
+  end
+  object qryPlano: TFDQuery
+    Connection = Dados.Conexao
+    SQL.Strings = (
+      'Select * from plano'
+      'ORDER BY DESCRICAO')
+    Left = 326
+    Top = 85
+    object qryPlanoCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      Origin = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object qryPlanoDESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+      Origin = 'DESCRICAO'
+      Required = True
+      Size = 30
+    end
+    object qryPlanoDC: TStringField
+      FieldName = 'DC'
+      Origin = 'DC'
+      Required = True
+      Size = 1
+    end
+  end
+  object dsPlano: TDataSource
+    DataSet = qryPlano
+    Left = 334
+    Top = 125
+  end
+  object frxReport: TfrxReport
+    Version = '6.8.6'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Default'
+    PrintOptions.PrintMode = pmSplit
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 42970.860474629600000000
+    ReportOptions.LastChange = 43936.404103750000000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    OnGetValue = frxReportGetValue
+    Left = 144
+    Top = 8
+    Datasets = <
+      item
+        DataSet = frxDBEmpresa
+        DataSetName = 'frxDBEmpresa'
+      end
+      item
+        DataSet = frxDBMov
+        DataSetName = 'frxDBMov'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 78.000000000000000000
+      PaperHeight = 210.000000000000000000
+      PaperSize = 256
+      LeftMargin = 5.000000000000000000
+      RightMargin = 5.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      Frame.Typ = []
+      EndlessHeight = True
+      MirrorMode = []
+      object PageHeader1: TfrxPageHeader
+        FillType = ftBrush
+        Frame.Typ = []
+        Height = 381.732530000000000000
+        Top = 18.897650000000000000
+        Width = 257.008040000000000000
+        object Memo2: TfrxMemoView
+          Align = baCenter
+          AllowVectorExport = True
+          Left = 3.779530000000000000
+          Width = 249.448980000000000000
+          Height = 18.897650000000000000
+          AutoWidth = True
+          DataField = 'FANTASIA'
+          DataSet = frxDBEmpresa
+          DataSetName = 'frxDBEmpresa'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBEmpresa."FANTASIA"]')
+          ParentFont = False
+          WordWrap = False
+        end
+        object Memo6: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Top = 117.165430000000000000
+          Width = 117.165430000000000000
+          Height = 18.897650000000000000
+          AutoWidth = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          Memo.UTF8W = (
+            'Data: [Date]')
+          ParentFont = False
+          WordWrap = False
+        end
+        object mCaixa: TfrxMemoView
+          AllowVectorExport = True
+          Top = 139.842610000000000000
+          Width = 75.590600000000000000
+          Height = 15.118120000000000000
+          AutoWidth = True
+          DataSet = frxDBMov
+          DataSetName = 'frxDBMov'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          Memo.UTF8W = (
+            '[CAIXA]')
+          ParentFont = False
+          WordWrap = False
+        end
+        object mOperador: TfrxMemoView
+          AllowVectorExport = True
+          Left = 81.259895000000000000
+          Top = 139.842610000000000000
+          Width = 102.047310000000000000
+          Height = 15.118120000000000000
+          AutoWidth = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          Memo.UTF8W = (
+            '[OPERADOR]')
+          ParentFont = False
+          WordWrap = False
+        end
+        object Memo9: TfrxMemoView
+          Align = baCenter
+          AllowVectorExport = True
+          Left = 43.464595000000000000
+          Top = 52.913420000000000000
+          Width = 170.078850000000000000
+          Height = 22.677180000000000000
+          AutoWidth = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -19
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '*** [TIPO] ***')
+          ParentFont = False
+          WordWrap = False
+        end
+        object Memo10: TfrxMemoView
+          AllowVectorExport = True
+          Left = 128.401670000000000000
+          Top = 117.385900000000000000
+          Width = 117.165430000000000000
+          Height = 18.897650000000000000
+          AutoWidth = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          Memo.UTF8W = (
+            'Hor'#225'rio: [Time]')
+          ParentFont = False
+          WordWrap = False
+        end
+        object Line2: TfrxLineView
+          Align = baCenter
+          AllowVectorExport = True
+          Left = -22.677180000000000000
+          Top = 162.519790000000000000
+          Width = 302.362400000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Frame.Typ = []
+          Diagonal = True
+        end
+        object Line1: TfrxLineView
+          Align = baCenter
+          AllowVectorExport = True
+          Left = -22.677180000000000000
+          Top = 49.133890000000000000
+          Width = 302.362400000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Frame.Typ = []
+          Diagonal = True
+        end
+        object Line3: TfrxLineView
+          Align = baCenter
+          AllowVectorExport = True
+          Left = -22.677180000000000000
+          Top = 238.110390000000000000
+          Width = 302.362400000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Frame.Typ = []
+          Diagonal = True
+        end
+        object Memo11: TfrxMemoView
+          Align = baCenter
+          AllowVectorExport = True
+          Left = 102.047310000000000000
+          Top = 170.078850000000000000
+          Width = 52.913420000000000000
+          Height = 15.118120000000000000
+          AutoWidth = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            'Valor')
+          ParentFont = False
+          WordWrap = False
+        end
+        object mValor: TfrxMemoView
+          Align = baCenter
+          AllowVectorExport = True
+          Left = 77.480365000000000000
+          Top = 200.315090000000000000
+          Width = 102.047310000000000000
+          Height = 30.236240000000000000
+          AutoWidth = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -24
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[VALOR]')
+          ParentFont = False
+          WordWrap = False
+        end
+        object Line4: TfrxLineView
+          Align = baCenter
+          AllowVectorExport = True
+          Left = -22.677180000000000000
+          Top = 302.362400000000000000
+          Width = 302.362400000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Frame.Typ = []
+          Diagonal = True
+        end
+        object Line5: TfrxLineView
+          Align = baCenter
+          AllowVectorExport = True
+          Left = -22.677180000000000000
+          Top = 370.393940000000000000
+          Width = 302.362400000000000000
+          Color = clBlack
+          Frame.Style = fsDot
+          Frame.Typ = []
+          Diagonal = True
+        end
+        object Memo13: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Top = 285.464750000000000000
+          Width = 49.133890000000000000
+          Height = 15.118120000000000000
+          AutoWidth = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -9
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          Memo.UTF8W = (
+            'Ass: Caixa')
+          ParentFont = False
+          WordWrap = False
+        end
+        object Memo14: TfrxMemoView
+          Align = baLeft
+          AllowVectorExport = True
+          Top = 353.496290000000000000
+          Width = 71.811070000000000000
+          Height = 15.118120000000000000
+          AutoWidth = True
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -9
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          Memo.UTF8W = (
+            'Ass: Supervisor')
+          ParentFont = False
+          WordWrap = False
+        end
+        object Memo7: TfrxMemoView
+          Align = baCenter
+          AllowVectorExport = True
+          Left = 3.779530000000000000
+          Top = 18.897650000000000000
+          Width = 249.448980000000000000
+          Height = 11.338590000000000000
+          AutoWidth = True
+          DataSet = frxDBEmpresa
+          DataSetName = 'frxDBEmpresa'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -9
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBEmpresa."ENDERECO"] - [frxDBEmpresa."NUMERO"]')
+          ParentFont = False
+          WordWrap = False
+        end
+        object frxDBEmpresaCIDADE: TfrxMemoView
+          IndexTag = 1
+          AllowVectorExport = True
+          Left = 6.338590000000000000
+          Top = 31.015770000000000000
+          Width = 279.685220000000000000
+          Height = 15.118120000000000000
+          DataSet = frxDBEmpresa
+          DataSetName = 'frxDBEmpresa'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -9
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = []
+          HAlign = haCenter
+          Memo.UTF8W = (
+            '[frxDBEmpresa."CIDADE"]-[frxDBEmpresa."UF"]')
+          ParentFont = False
+        end
+      end
+    end
+  end
+  object frxPDFExport1: TfrxPDFExport
+    UseFileCache = True
+    ShowProgress = True
+    OverwritePrompt = False
+    DataOnly = False
+    InteractiveFormsFontSubset = 'A-Z,a-z,0-9,#43-#47 '
+    OpenAfterExport = False
+    PrintOptimized = False
+    Outline = False
+    Background = False
+    HTMLTags = True
+    Quality = 95
+    Transparency = False
+    Author = 'FastReport'
+    Subject = 'FastReport PDF export'
+    ProtectionFlags = [ePrint, eModify, eCopy, eAnnot]
+    HideToolbar = False
+    HideMenubar = False
+    HideWindowUI = False
+    FitWindow = False
+    CenterWindow = False
+    PrintScaling = False
+    PdfA = False
+    PDFStandard = psNone
+    PDFVersion = pv17
+    Left = 144
+    Top = 72
+  end
+  object frxDBMov: TfrxDBDataset
+    UserName = 'frxDBMov'
+    CloseDataSource = False
+    FieldAliases.Strings = (
+      'CODIGO=CODIGO'
+      'ID_CONTA_CAIXA=ID_CONTA_CAIXA'
+      'DATA=DATA'
+      'HORA=HORA'
+      'FKVENDA=FKVENDA'
+      'LOTE=LOTE'
+      'ID_USUARIO=ID_USUARIO'
+      'HISTORICO=HISTORICO'
+      'ENTRADA=ENTRADA'
+      'SAIDA=SAIDA')
+    DataSet = qryConta_Movimento
+    BCDToCurrency = False
+    Left = 144
+    Top = 136
+  end
+  object frxDBEmpresa: TfrxDBDataset
+    UserName = 'frxDBEmpresa'
+    CloseDataSource = False
+    FieldAliases.Strings = (
+      'CODIGO=CODIGO'
+      'FANTASIA=FANTASIA'
+      'RAZAO=RAZAO'
+      'TIPO=TIPO'
+      'CNPJ=CNPJ'
+      'IE=IE'
+      'IM=IM'
+      'ENDERECO=ENDERECO'
+      'NUMERO=NUMERO'
+      'COMPLEMENTO=COMPLEMENTO'
+      'BAIRRO=BAIRRO'
+      'CIDADE=CIDADE'
+      'UF=UF'
+      'CEP=CEP'
+      'FONE=FONE'
+      'FAX=FAX'
+      'SITE=SITE'
+      'LOGOMARCA=LOGOMARCA'
+      'FUNDACAO=FUNDACAO'
+      'USU_CAD=USU_CAD'
+      'USU_ATU=USU_ATU'
+      'NSERIE=NSERIE'
+      'CSENHA=CSENHA'
+      'NTERM=NTERM'
+      'ID_PLANO_TRANSFERENCIA_C=ID_PLANO_TRANSFERENCIA_C'
+      'ID_PLANO_TRANSFERENCIA_D=ID_PLANO_TRANSFERENCIA_D'
+      'ID_CAIXA_GERAL=ID_CAIXA_GERAL'
+      'BLOQUEAR_ESTOQUE_NEGATIVO=BLOQUEAR_ESTOQUE_NEGATIVO'
+      'ID_CIDADE=ID_CIDADE'
+      'CRT=CRT'
+      'ID_UF=ID_UF'
+      'ID_PLANO_VENDA=ID_PLANO_VENDA'
+      'OBSFISCO=OBSFISCO'
+      'CFOP=CFOP'
+      'CSOSN=CSOSN'
+      'CST_ICMS=CST_ICMS'
+      'ALIQ_ICMS=ALIQ_ICMS'
+      'CST_ENTRADA=CST_ENTRADA'
+      'CST_SAIDA=CST_SAIDA'
+      'ALIQ_PIS=ALIQ_PIS'
+      'ALIQ_COF=ALIQ_COF'
+      'CST_IPI=CST_IPI'
+      'ALIQ_IPI=ALIQ_IPI'
+      'IMP_F5=IMP_F5'
+      'IMP_F6=IMP_F6'
+      'MOSTRA_RESUMO_CAIXA=MOSTRA_RESUMO_CAIXA'
+      'LIMITE_DIARIO=LIMITE_DIARIO'
+      'PRAZO_MAXIMO=PRAZO_MAXIMO'
+      'ID_PLA_CONTA_FICHA_CLI=ID_PLA_CONTA_FICHA_CLI'
+      'ID_PLANO_CONTA_RETIRADA=ID_PLANO_CONTA_RETIRADA'
+      'USA_PDV=USA_PDV'
+      'RECIBO_VIAS=RECIBO_VIAS'
+      'ID_PLANO_TAXA_CARTAO=ID_PLANO_TAXA_CARTAO'
+      'OBS_CARNE=OBS_CARNE'
+      'CAIXA_UNICO=CAIXA_UNICO'
+      'CAIXA_RAPIDO=CAIXA_RAPIDO'
+      'EMPRESA_PADRAO=EMPRESA_PADRAO'
+      'ID_PLANO_CONTA_DEVOLUCAO=ID_PLANO_CONTA_DEVOLUCAO'
+      'N_INICIAL_NFCE=N_INICIAL_NFCE'
+      'N_INICIAL_NFE=N_INICIAL_NFE'
+      'CHECA_ESTOQUE_FISCAL=CHECA_ESTOQUE_FISCAL'
+      'DESCONTO_PROD_PROMO=DESCONTO_PROD_PROMO'
+      'LANCAR_CARTAO_CREDITO=LANCAR_CARTAO_CREDITO'
+      'FILTRAR_EMPRESA_LOGIN=FILTRAR_EMPRESA_LOGIN'
+      'ENVIAR_EMAIL_NFE=ENVIAR_EMAIL_NFE'
+      'TRANSPORTADORA=TRANSPORTADORA'
+      'TABELA_PRECO=TABELA_PRECO'
+      'TAXA_VENDA_PRAZO=TAXA_VENDA_PRAZO'
+      'EMAIL_CONTADOR=EMAIL_CONTADOR'
+      'AUTOPECAS=AUTOPECAS'
+      'ATUALIZA_PR_VENDA=ATUALIZA_PR_VENDA'
+      'INFORMAR_GTIN=INFORMAR_GTIN'
+      'RECOLHE_FCP=RECOLHE_FCP'
+      'DIFAL_ORIGEM=DIFAL_ORIGEM'
+      'DIFAL_DESTINO=DIFAL_DESTINO'
+      'EXCLUI_PDV=EXCLUI_PDV'
+      'VENDA_SEMENTE=VENDA_SEMENTE'
+      'EMAIL=EMAIL'
+      'ULTIMO_PEDIDO=ULTIMO_PEDIDO'
+      'ULTIMONSU=ULTIMONSU'
+      'TIPO_CONTRATO=TIPO_CONTRATO'
+      'VIRTUAL_ID_UF=VIRTUAL_ID_UF'
+      'VIRTUAL_UF=VIRTUAL_UF'
+      'DATA_CADASTRO=DATA_CADASTRO'
+      'DATA_VALIDADE=DATA_VALIDADE'
+      'FLAG=FLAG'
+      'CHECA=CHECA'
+      'BLOQUEAR_PRECO=BLOQUEAR_PRECO'
+      'EXIBE_RESUMO_CAIXA=EXIBE_RESUMO_CAIXA'
+      'EXIBE_F3=EXIBE_F3'
+      'EXIBE_F4=EXIBE_F4'
+      'RESTAURANTE=RESTAURANTE'
+      'PESQUISA_REFERENCIA=PESQUISA_REFERENCIA'
+      'CARENCIA_JUROS=CARENCIA_JUROS'
+      'RESPONSAVEL_TECNICO=RESPONSAVEL_TECNICO'
+      'ID_PLANO_COMPRA=ID_PLANO_COMPRA'
+      'LER_PESO=LER_PESO'
+      'FARMACIA=FARMACIA'
+      'TIPO_EMPRESA=TIPO_EMPRESA'
+      'QTD_MESAS=QTD_MESAS'
+      'TIPO_JUROS=TIPO_JUROS'
+      'JUROS_DIA=JUROS_DIA'
+      'JUROS_MES=JUROS_MES'
+      'LOJA_ROUPA=LOJA_ROUPA'
+      'EMITE_ECF=EMITE_ECF'
+      'CHECA_LIMITE=CHECA_LIMITE'
+      'DESCONTO_MAXIMO=DESCONTO_MAXIMO'
+      'RESPONSAVEL_EMPRESA=RESPONSAVEL_EMPRESA'
+      'PAGAMENTO_DINHEIRO=PAGAMENTO_DINHEIRO'
+      'HABILITA_DESCONTO_PDV=HABILITA_DESCONTO_PDV'
+      'PUXA_CFOP_PRODUTO=PUXA_CFOP_PRODUTO'
+      'USA_BLUETOOTH_RESTA=USA_BLUETOOTH_RESTA'
+      'LANCAR_CARTAO_CR=LANCAR_CARTAO_CR'
+      'CFOP_EXTERNO=CFOP_EXTERNO'
+      'CNAE=CNAE'
+      'OBSNFCE=OBSNFCE'
+      'CODIGO_PAIS=CODIGO_PAIS'
+      'MULTI_IDIOMA=MULTI_IDIOMA'
+      'HABILITA_ACRESCIMO=HABILITA_ACRESCIMO'
+      'COD_FPG_DINHEIRO=COD_FPG_DINHEIRO'
+      'CSOSN_EXTERNO=CSOSN_EXTERNO'
+      'CST_EXTERNO=CST_EXTERNO'
+      'ALIQ_ICMS_EXTERNO=ALIQ_ICMS_EXTERNO'
+      'SEGUNDA_VIA_NFCE=SEGUNDA_VIA_NFCE'
+      'ID_PLANO_BOLETO=ID_PLANO_BOLETO'
+      'REPLICAR_DADOS=REPLICAR_DADOS'
+      'CFOP_ENTRADA_PADRAO=CFOP_ENTRADA_PADRAO'
+      'PUXAR_CFOP_ENTRADA=PUXAR_CFOP_ENTRADA'
+      'CFOP_ENTRADA_PADRO_E=CFOP_ENTRADA_PADRO_E')
+    DataSet = Dados.qryEmpresa
+    BCDToCurrency = False
+    Left = 56
+    Top = 136
+  end
+  object ACBrEnterTab1: TACBrEnterTab
+    EnterAsTab = True
+    Left = 304
+    Top = 176
+  end
+end
