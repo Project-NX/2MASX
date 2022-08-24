@@ -13,7 +13,8 @@ uses
   SWHDBEdit, ACBrBase, ACBrEnterTab, cxGraphics, cxControls, cxLookAndFeels,
   cxLookAndFeelPainters, cxContainer, cxEdit, cxTextEdit, cxMaskEdit, cxDropDownEdit, cxLookupEdit,
   cxDBLookupEdit, cxDBLookupComboBox, dxSkinsCore, dxSkinDevExpressDarkStyle,
-  dxSkinOffice2019Colorful, dxSkinOffice2019DarkGray, Vcl.Menus, cxButtons;
+  dxSkinOffice2019Colorful, dxSkinOffice2019DarkGray, Vcl.Menus, cxButtons,
+  DBGridEh, DBCtrlsEh, DBLookupEh;
 
 type
   TfrmAcesso = class(TForm)
@@ -50,20 +51,20 @@ type
     lbl_nome_sistema: TLabel;
     lbl_versao: TLabel;
     lbl_bemvindo: TLabel;
-    lbl_autor: TLabel;
     pnl_usuario: TPanel;
     lbl_nome_usuario: TLabel;
     pnl_senha: TPanel;
     lbl_senha: TLabel;
     edtsenha: TEdit;
     pnl_barra_senha: TPanel;
-    pnl_botoes: TPanel;
-    pnl_botao_cancelar: TPanel;
-    btn_cancelar: TSpeedButton;
     CbUsuario: TSWHDBLookupComboBox;
     CbEmpresa: TSWHDBLookupComboBox;
     Label4: TLabel;
     cxButtonConfirma: TcxButton;
+    Label1: TLabel;
+    btn_cancelar: TSpeedButton;
+    edtusuario: TEdit;
+    Panel1: TPanel;
     procedure FormKeyPress(Sender: TObject; var Key: Char);
     procedure FormShow(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
@@ -73,6 +74,7 @@ type
     procedure btn_cancelarClick(Sender: TObject);
     procedure pnl_botao_confirmaExit(Sender: TObject);
     procedure cxButtonConfirmaClick(Sender: TObject);
+    procedure btn_fecharClick(Sender: TObject);
   private
     fechar: boolean;
     { Private declarations }
@@ -96,21 +98,30 @@ begin
   Application.Terminate;
 end;
 
+procedure TfrmAcesso.btn_fecharClick(Sender: TObject);
+begin
+  fechar := true;
+  Dados.vFechaPrograma := true;
+  Application.Terminate;
+end;
+
 procedure TfrmAcesso.CbUsuarioEnter(Sender: TObject);
 begin
-  TDBLookupComboBox(Sender).DropDown;
+  //TDBLookupComboBox(Sender).DropDown;
 end;
 
 procedure TfrmAcesso.cxButtonConfirmaClick(Sender: TObject);
 begin
 
   qryUsuarios.Close;
-  qryUsuarios.Params[0].Value := CbUsuario.Text;
+  qryUsuarios.Params[0].Value := edtusuario.text; //CbUsuario.Text;
   qryUsuarios.Open;
 
-  if not(CbUsuario.KeyValue > 0) then
+//  if not(CbUsuario.KeyValue > 0) then
+  if edtusuario.text = '' then
   begin
     ShowMessage('Informe o usuário');
+    edtusuario.SetFocus;
     exit;
   end;
 
@@ -123,10 +134,8 @@ begin
     exit;
   end;
 
-
-
   Dados.idUsuario := qryUsuariosCODIGO.Value;
-  Dados.vUsuario := qryUsuariosLOGIN.Value;
+  Dados.vUsuario  := qryUsuariosLOGIN.Value;
   fechar := true;
 
   if not Dados.vRetaguarda then
@@ -219,7 +228,7 @@ begin
   qrySupervisor.Open;
 
   CbEmpresa.KeyValue := qryEmpresaCODIGO.Value;
-  CbUsuario.KeyValue := qrySupervisorCODIGO.Value;
+  //CbUsuario.KeyValue := qrySupervisorCODIGO.Value;
 
 end;
 
@@ -230,7 +239,16 @@ begin
     Key := #0;
     Perform(CM_DialogKey, Vk_Tab, 0);
   end;
-end;
+
+  If Key = #27 then
+  begin
+    fechar := true;
+    Dados.vFechaPrograma := true;
+    Application.Terminate;
+  end;
+
+
+  end;
 
 procedure TfrmAcesso.FormResize(Sender: TObject);
 begin
@@ -248,8 +266,9 @@ begin
     end;
 
     fechar := false;
-  CbUsuario.SetFocus;
-  CbUsuario.KeyValue := 1;
+ // CbUsuario.SetFocus;
+  //CbUsuario.KeyValue := 1;
+  edtusuario.SetFocus;
 
 end;
 
