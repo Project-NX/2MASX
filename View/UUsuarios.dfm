@@ -5,7 +5,8 @@ object FrmUsuarios: TFrmUsuarios
   Caption = 'Sistema ERP - Usu'#225'rios'
   ClientHeight = 442
   ClientWidth = 327
-  Color = 5723991
+  Color = 12153715
+  TransparentColorValue = 12153715
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -29,17 +30,15 @@ object FrmUsuarios: TFrmUsuarios
     Align = alClient
     BevelOuter = bvNone
     Caption = 'Panel2'
-    Color = 5723991
+    Color = 15263976
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 333
-    ExplicitHeight = 439
     object PageControl1: TPageControl
       Left = 0
       Top = 0
       Width = 327
       Height = 442
-      ActivePage = TabSheet1
+      ActivePage = TabSheet2
       Align = alClient
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
@@ -49,15 +48,9 @@ object FrmUsuarios: TFrmUsuarios
       ParentFont = False
       Style = tsFlatButtons
       TabOrder = 0
-      ExplicitWidth = 333
-      ExplicitHeight = 439
       object TabSheet1: TTabSheet
         Caption = 'Lista de usu'#225'rios'
         TabVisible = False
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 607
-        ExplicitHeight = 547
         object DBGrid1: TDBGrid
           AlignWithMargins = True
           Left = 5
@@ -121,9 +114,6 @@ object FrmUsuarios: TFrmUsuarios
           Color = clWhite
           ParentBackground = False
           TabOrder = 1
-          ExplicitLeft = 0
-          ExplicitTop = 518
-          ExplicitWidth = 811
           object Panel6: TPanel
             Left = 1
             Top = 1
@@ -146,8 +136,16 @@ object FrmUsuarios: TFrmUsuarios
               Margins.Bottom = 5
               Align = alLeft
               Caption = 'F3 | Alterar'
+              Colors.Default = 12153715
+              Colors.DefaultText = clWhite
+              Colors.Normal = 12153715
+              Colors.NormalText = clWhite
+              Colors.Hot = 12153715
+              Colors.HotText = clWhite
+              Colors.Disabled = clGray
+              Colors.DisabledText = clSilver
               LookAndFeel.NativeStyle = False
-              LookAndFeel.SkinName = 'DevExpressDarkStyle'
+              LookAndFeel.SkinName = ''
               OptionsImage.Glyph.SourceDPI = 96
               OptionsImage.Glyph.Data = {
                 89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -182,7 +180,6 @@ object FrmUsuarios: TFrmUsuarios
               Font.Style = []
               ParentFont = False
               OnClick = cxEditarClick
-              ExplicitLeft = 147
             end
             object cxNovo: TcxButton
               AlignWithMargins = True
@@ -196,8 +193,16 @@ object FrmUsuarios: TFrmUsuarios
               Margins.Bottom = 5
               Align = alLeft
               Caption = 'F2 | Novo'
+              Colors.Default = 12153715
+              Colors.DefaultText = clWhite
+              Colors.Normal = 12153715
+              Colors.NormalText = clWhite
+              Colors.Hot = 12153715
+              Colors.HotText = clWhite
+              Colors.Disabled = clGray
+              Colors.DisabledText = clSilver
               LookAndFeel.NativeStyle = False
-              LookAndFeel.SkinName = 'DevExpressDarkStyle'
+              LookAndFeel.SkinName = ''
               OptionsImage.Glyph.SourceDPI = 96
               OptionsImage.Glyph.Data = {
                 89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -237,8 +242,6 @@ object FrmUsuarios: TFrmUsuarios
               Font.Style = []
               ParentFont = False
               OnClick = cxNovoClick
-              ExplicitLeft = 5
-              ExplicitTop = 6
             end
           end
         end
@@ -253,75 +256,81 @@ object FrmUsuarios: TFrmUsuarios
         ImageIndex = 1
         ParentFont = False
         TabVisible = False
-        ExplicitLeft = 0
-        ExplicitTop = 0
-        ExplicitWidth = 325
-        ExplicitHeight = 431
         object Label1: TLabel
           Left = 30
           Top = 13
-          Width = 50
-          Height = 20
+          Width = 54
+          Height = 21
           Caption = 'Usu'#225'rio'
+          Color = 4868682
           FocusControl = DBEdit1
           Font.Charset = ANSI_CHARSET
-          Font.Color = clWhite
-          Font.Height = -15
+          Font.Color = 4868682
+          Font.Height = -16
           Font.Name = 'Segoe UI'
           Font.Style = []
+          ParentColor = False
           ParentFont = False
         end
         object Label3: TLabel
           Left = 30
           Top = 71
-          Width = 40
-          Height = 20
+          Width = 43
+          Height = 21
           Caption = 'Senha'
+          Color = 4868682
           FocusControl = DBEdit3
           Font.Charset = ANSI_CHARSET
-          Font.Color = clWhite
-          Font.Height = -15
+          Font.Color = 4868682
+          Font.Height = -16
           Font.Name = 'Segoe UI'
           Font.Style = []
+          ParentColor = False
           ParentFont = False
         end
         object Label2: TLabel
           Left = 30
           Top = 129
-          Width = 110
-          Height = 20
+          Width = 118
+          Height = 21
           Caption = 'Confirmar Senha'
+          Color = 4868682
           Font.Charset = ANSI_CHARSET
-          Font.Color = clWhite
-          Font.Height = -15
+          Font.Color = 4868682
+          Font.Height = -16
           Font.Name = 'Segoe UI'
           Font.Style = []
+          ParentColor = False
           ParentFont = False
         end
         object Label5: TLabel
           Left = 30
           Top = 245
-          Width = 114
-          Height = 20
+          Width = 119
+          Height = 21
           Caption = 'Vendedor Padr'#227'o'
+          Color = 4868682
           Font.Charset = ANSI_CHARSET
-          Font.Color = clWhite
-          Font.Height = -15
+          Font.Color = 4868682
+          Font.Height = -16
           Font.Name = 'Segoe UI'
           Font.Style = []
+          ParentColor = False
           ParentFont = False
         end
         object Label4: TLabel
           Left = 30
           Top = 187
-          Width = 70
-          Height = 20
+          Width = 75
+          Height = 21
           Caption = 'Senha APP'
+          Color = 4868682
           Font.Charset = ANSI_CHARSET
-          Font.Color = clWhite
-          Font.Height = -15
+          Font.Color = 4868682
+          Font.Height = -16
           Font.Name = 'Segoe UI'
           Font.Style = []
+          ParentColor = False
           ParentFont = False
         end
         object DBEdit1: TDBEdit
@@ -469,9 +478,6 @@ object FrmUsuarios: TFrmUsuarios
           Color = clWhite
           ParentBackground = False
           TabOrder = 8
-          ExplicitLeft = 0
-          ExplicitTop = 518
-          ExplicitWidth = 811
           object Panel5: TPanel
             Left = 1
             Top = 1
@@ -479,8 +485,11 @@ object FrmUsuarios: TFrmUsuarios
             Height = 55
             Align = alLeft
             BevelOuter = bvNone
+            Color = 12961221
+            ParentBackground = False
             TabOrder = 0
             ExplicitLeft = 0
+            ExplicitTop = -7
             object cxSair: TcxButton
               AlignWithMargins = True
               Left = 160
@@ -493,8 +502,16 @@ object FrmUsuarios: TFrmUsuarios
               Margins.Bottom = 5
               Align = alLeft
               Caption = 'ESC | Sair'
+              Colors.Default = 12153715
+              Colors.DefaultText = clWhite
+              Colors.Normal = 12153715
+              Colors.NormalText = clWhite
+              Colors.Hot = 12153715
+              Colors.HotText = clWhite
+              Colors.Disabled = clGray
+              Colors.DisabledText = clSilver
               LookAndFeel.NativeStyle = False
-              LookAndFeel.SkinName = 'DevExpressDarkStyle'
+              LookAndFeel.SkinName = ''
               OptionsImage.Glyph.SourceDPI = 96
               OptionsImage.Glyph.Data = {
                 89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -522,7 +539,6 @@ object FrmUsuarios: TFrmUsuarios
               Font.Style = []
               ParentFont = False
               OnClick = cxSairClick
-              ExplicitLeft = 147
             end
             object cxSalvar: TcxButton
               AlignWithMargins = True
@@ -536,8 +552,16 @@ object FrmUsuarios: TFrmUsuarios
               Margins.Bottom = 5
               Align = alLeft
               Caption = 'F10 | Salvar'
+              Colors.Default = 12153715
+              Colors.DefaultText = clWhite
+              Colors.Normal = 12153715
+              Colors.NormalText = clWhite
+              Colors.Hot = 12153715
+              Colors.HotText = clWhite
+              Colors.Disabled = clGray
+              Colors.DisabledText = clSilver
               LookAndFeel.NativeStyle = False
-              LookAndFeel.SkinName = 'DevExpressDarkStyle'
+              LookAndFeel.SkinName = ''
               OptionsImage.Glyph.SourceDPI = 96
               OptionsImage.Glyph.Data = {
                 89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -562,7 +586,6 @@ object FrmUsuarios: TFrmUsuarios
               Font.Style = []
               ParentFont = False
               OnClick = cxSalvarClick
-              ExplicitLeft = 5
             end
           end
         end

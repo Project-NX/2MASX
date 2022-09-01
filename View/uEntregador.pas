@@ -12,7 +12,8 @@ uses
   FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.ComCtrls, Vcl.DBCtrls,
   Vcl.Mask,
   DBCtrlsEh, ACBrBase, ACBrEnterTab, frxClass, frxDBSet, frxExportPDF,
-  frxExportBaseDialog, frxExportXLS;
+  frxExportBaseDialog, frxExportXLS, dxSkinsCore, cxGraphics, cxLookAndFeels,
+  cxLookAndFeelPainters, Vcl.Menus, cxButtons;
 
 type
   TfrmEntregador = class(TForm)
@@ -27,13 +28,9 @@ type
     Label2: TLabel;
     DBEdit2: TDBEdit;
     Panel2: TPanel;
-    Panel3: TPanel;
     Panel4: TPanel;
     btnGravar: TSpeedButton;
     btnCancelar: TSpeedButton;
-    bbNovo: TSpeedButton;
-    bbAlterar: TSpeedButton;
-    btnImp: TSpeedButton;
     frxReport: TfrxReport;
     frxPDFExport1: TfrxPDFExport;
     frxDBEmpresa: TfrxDBDataset;
@@ -42,6 +39,9 @@ type
     frxXLSExport1: TfrxXLSExport;
     GroupBox1: TGroupBox;
     edtLoc: TEdit;
+    bbNovo: TcxButton;
+    btnImp: TcxButton;
+    bbAlterar: TcxButton;
     procedure FormShow(Sender: TObject);
     procedure edtLocChange(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);

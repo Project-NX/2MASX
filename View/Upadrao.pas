@@ -505,23 +505,23 @@ procedure Tfrm_dashboard.GeraDados;
 begin
 // inicio
       //Card1
-    maskInicio.Text := DateToStr(StartOfTheMonth(DATE));
-    maskFim.Text := DateToStr(EndOfTheMonth(DATE));
+    maskInicio.Text  := DateToStr(StartOfTheMonth(DATE));
+    maskFim.Text     := DateToStr(EndOfTheMonth(DATE));
     Card1;
 
     //Card2
     maskInicio2.Text := DateToStr(StartOfTheMonth(IncMonth(DATE,-1)));
-    maskFim2.Text := DateToStr(EndOfTheMonth(IncMonth(DATE,-1)));
+    maskFim2.Text    := DateToStr(EndOfTheMonth(IncMonth(DATE,-1)));
     Card2;
 
     //Card3
     maskInicio3.Text := DateToStr(StartOfTheMonth(DATE));
-    maskFim3.Text := DateToStr(EndOfTheMonth(DATE));
+    maskFim3.Text    := DateToStr(EndOfTheMonth(DATE));
     Card3;
 
     //Card4
     maskInicio4.Text := DateToStr(StartOfTheMonth(IncMonth(DATE,-1)));
-    maskFim4.Text := DateToStr(EndOfTheMonth(IncMonth(DATE,-1)));
+    maskFim4.Text    := DateToStr(EndOfTheMonth(IncMonth(DATE,-1)));
     Card4;
 
     //Card5
@@ -635,7 +635,7 @@ begin
 
       filtro1 := ' and status=''F''';
 
-      ordem := ' order by co.dtemissao' + vOrdem1;
+      ordem   := ' order by co.dtemissao' + vOrdem1;
 
   dados.qryCompraDash.Close;
   dados.qryCompraDash.SQL.Text := vSql1;

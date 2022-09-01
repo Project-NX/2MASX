@@ -43,15 +43,17 @@ object frm_dashboard: Tfrm_dashboard
     Height = 121
     Caption = 'Card Compras M'#234's Atual'
     Color = clBtnFace
+    Ctl3D = False
     ParentBackground = False
     ParentColor = False
+    ParentCtl3D = False
     TabOrder = 1
     Visible = False
     object DBEditCompraAtual: TDBEdit
       Left = 7
       Top = 32
       Width = 121
-      Height = 21
+      Height = 19
       DataField = 'TTOTAL'
       DataSource = DSCompraAtual
       TabOrder = 0
@@ -96,19 +98,21 @@ object frm_dashboard: Tfrm_dashboard
   object GroupBoxCard2: TGroupBox
     Left = 175
     Top = 8
-    Width = 146
+    Width = 161
     Height = 121
     Caption = 'Card Compras M'#234's Anterior'
     Color = clBtnFace
+    Ctl3D = False
     ParentBackground = False
     ParentColor = False
+    ParentCtl3D = False
     TabOrder = 2
     Visible = False
     object DBEditCompraAnterior: TDBEdit
       Left = 7
       Top = 32
       Width = 130
-      Height = 21
+      Height = 19
       DataField = 'TTOTAL'
       DataSource = DSCompraAnterior
       TabOrder = 0

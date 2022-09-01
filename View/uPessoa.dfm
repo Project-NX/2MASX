@@ -7,7 +7,7 @@ object frmPessoas: TfrmPessoas
   Caption = 'Contatos'
   ClientHeight = 739
   ClientWidth = 1018
-  Color = 12153715
+  Color = 7300181
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11

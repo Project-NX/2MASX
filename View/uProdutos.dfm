@@ -6,7 +6,7 @@ object frmProdutos: TfrmProdutos
   Caption = 'Produtos'
   ClientHeight = 671
   ClientWidth = 1014
-  Color = 5723991
+  Color = 7300181
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -386,8 +386,17 @@ object frmProdutos: TfrmProdutos
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F3 | Alterar'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Pressed = 12153715
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -437,8 +446,17 @@ object frmProdutos: TfrmProdutos
       Align = alLeft
       BiDiMode = bdLeftToRight
       Caption = 'F5 | Atualizar'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Pressed = 12153715
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -491,8 +509,17 @@ object frmProdutos: TfrmProdutos
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F4 | Imprimir'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Pressed = 12153715
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -533,8 +560,17 @@ object frmProdutos: TfrmProdutos
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F2 | Novo'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Pressed = 12153715
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -574,6 +610,8 @@ object frmProdutos: TfrmProdutos
       Font.Style = []
       ParentFont = False
       OnClick = cxNovoClick
+      ExplicitTop = 16
+      ExplicitHeight = 42
     end
   end
   object OpenPicture: TOpenPictureDialog
@@ -713,7 +751,7 @@ object frmProdutos: TfrmProdutos
     Top = 256
   end
   object frxReport: TfrxReport
-    Version = '6.8.6'
+    Version = '6.9.12'
     DataSetName = 'frxDBCo'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
@@ -758,6 +796,10 @@ object frmProdutos: TfrmProdutos
       MirrorMode = []
       object MasterData1: TfrxMasterData
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 24.960000000000000000
         Top = 268.346630000000000000
@@ -953,6 +995,10 @@ object frmProdutos: TfrmProdutos
       end
       object PageHeader1: TfrxPageHeader
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 144.000000000000000000
         Top = 18.897650000000000000
@@ -1086,6 +1132,10 @@ object frmProdutos: TfrmProdutos
       end
       object ColumnHeader1: TfrxColumnHeader
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 24.000000000000000000
         Top = 185.196970000000000000
@@ -1250,6 +1300,10 @@ object frmProdutos: TfrmProdutos
       end
       object PageFooter1: TfrxPageFooter
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 22.677180000000000000
         Top = 408.189240000000000000
@@ -1288,6 +1342,10 @@ object frmProdutos: TfrmProdutos
       end
       object ReportSummary1: TfrxReportSummary
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 28.800000000000000000
         Top = 355.275820000000000000

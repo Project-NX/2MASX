@@ -12,7 +12,9 @@ uses
   FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.ComCtrls, Vcl.DBCtrls,
   Vcl.Mask,
   DBCtrlsEh, ACBrBase, ACBrEnterTab, frxClass, frxDBSet, frxExportPDF,
-  frxExportBaseDialog, DBGridEh, DBLookupEh, JvComponentBase, JvEnterTab;
+  frxExportBaseDialog, DBGridEh, DBLookupEh, JvComponentBase, JvEnterTab,
+  dxSkinsCore, cxGraphics, cxLookAndFeels, cxLookAndFeelPainters, Vcl.Menus,
+  cxButtons;
 
 type
   TfrmContador = class(TForm)
@@ -59,9 +61,9 @@ type
     GroupBox1: TGroupBox;
     edtLoc: TEdit;
     JvEnterAsTab1: TJvEnterAsTab;
-    bbNovo: TSpeedButton;
-    bbAlterar: TSpeedButton;
-    btnImp: TSpeedButton;
+    bbNovo: TcxButton;
+    bbAlterar: TcxButton;
+    btnImp: TcxButton;
     procedure FormShow(Sender: TObject);
     procedure edtLocChange(Sender: TObject);
     procedure btnCancelarClick(Sender: TObject);

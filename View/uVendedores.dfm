@@ -1,12 +1,12 @@
 object frmVendedor: TfrmVendedor
   Left = 0
   Top = 0
-  ActiveControl = DBGrid1
+  ActiveControl = DBEdit2
   BorderStyle = bsDialog
   Caption = 'Sistema ERP - Vendedores'
   ClientHeight = 398
   ClientWidth = 728
-  Color = 5723991
+  Color = 12153715
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -30,28 +30,25 @@ object frmVendedor: TfrmVendedor
     Margins.Top = 7
     Margins.Right = 7
     Margins.Bottom = 7
-    ActivePage = Lista
+    ActivePage = Cadastro
     Align = alClient
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
     Font.Name = 'Segoe UI'
     Font.Style = []
+    MultiLine = True
     ParentFont = False
     TabOrder = 0
     object Lista: TTabSheet
       AlignWithMargins = True
       Caption = 'Lista'
       TabVisible = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 571
-      ExplicitHeight = 296
       object DBGrid1: TDBGrid
         Left = 0
         Top = 70
         Width = 700
-        Height = 226
+        Height = 229
         Align = alClient
         DataSource = dsVendedor
         GradientEndColor = 16447733
@@ -137,7 +134,6 @@ object frmVendedor: TfrmVendedor
         Font.Style = []
         ParentFont = False
         TabOrder = 1
-        ExplicitWidth = 571
         object edtLoc: TEdit
           Left = 12
           Top = 28
@@ -163,9 +159,9 @@ object frmVendedor: TfrmVendedor
       object Panel3: TPanel
         AlignWithMargins = True
         Left = 0
-        Top = 303
+        Top = 306
         Width = 700
-        Height = 65
+        Height = 62
         Margins.Left = 0
         Margins.Top = 7
         Margins.Right = 0
@@ -175,23 +171,28 @@ object frmVendedor: TfrmVendedor
         Color = clWhite
         ParentBackground = False
         TabOrder = 2
-        ExplicitLeft = 7
-        ExplicitTop = 272
-        ExplicitWidth = 557
         object cxNovo: TcxButton
           AlignWithMargins = True
           Left = 7
           Top = 7
           Width = 150
-          Height = 51
+          Height = 48
           Margins.Left = 7
           Margins.Top = 7
           Margins.Right = 0
           Margins.Bottom = 7
           Align = alLeft
           Caption = 'F2 | Novo'
+          Colors.Default = 12153715
+          Colors.DefaultText = clWhite
+          Colors.Normal = 12153715
+          Colors.NormalText = clWhite
+          Colors.Hot = 12153715
+          Colors.HotText = clWhite
+          Colors.Disabled = clGray
+          Colors.DisabledText = clSilver
           LookAndFeel.NativeStyle = False
-          LookAndFeel.SkinName = 'DevExpressDarkStyle'
+          LookAndFeel.SkinName = ''
           OptionsImage.Glyph.SourceDPI = 96
           OptionsImage.Glyph.Data = {
             89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -231,21 +232,30 @@ object frmVendedor: TfrmVendedor
           Font.Style = []
           ParentFont = False
           OnClick = cxNovoClick
+          ExplicitHeight = 51
         end
         object cxImprimir: TcxButton
           AlignWithMargins = True
           Left = 321
           Top = 7
           Width = 150
-          Height = 51
+          Height = 48
           Margins.Left = 7
           Margins.Top = 7
           Margins.Right = 0
           Margins.Bottom = 7
           Align = alLeft
           Caption = 'F4 | Imprimir'
+          Colors.Default = 12153715
+          Colors.DefaultText = clWhite
+          Colors.Normal = 12153715
+          Colors.NormalText = clWhite
+          Colors.Hot = 12153715
+          Colors.HotText = clWhite
+          Colors.Disabled = clGray
+          Colors.DisabledText = clSilver
           LookAndFeel.NativeStyle = False
-          LookAndFeel.SkinName = 'DevExpressDarkStyle'
+          LookAndFeel.SkinName = ''
           OptionsImage.Glyph.SourceDPI = 96
           OptionsImage.Glyph.Data = {
             89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -270,21 +280,30 @@ object frmVendedor: TfrmVendedor
           Font.Style = []
           ParentFont = False
           OnClick = cxImprimirClick
+          ExplicitHeight = 51
         end
         object cxAlterar: TcxButton
           AlignWithMargins = True
           Left = 164
           Top = 7
           Width = 150
-          Height = 51
+          Height = 48
           Margins.Left = 7
           Margins.Top = 7
           Margins.Right = 0
           Margins.Bottom = 7
           Align = alLeft
           Caption = 'F3 | Alterar'
+          Colors.Default = 12153715
+          Colors.DefaultText = clWhite
+          Colors.Normal = 12153715
+          Colors.NormalText = clWhite
+          Colors.Hot = 12153715
+          Colors.HotText = clWhite
+          Colors.Disabled = clGray
+          Colors.DisabledText = clSilver
           LookAndFeel.NativeStyle = False
-          LookAndFeel.SkinName = 'DevExpressDarkStyle'
+          LookAndFeel.SkinName = ''
           OptionsImage.Glyph.SourceDPI = 96
           OptionsImage.Glyph.Data = {
             89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -319,6 +338,7 @@ object frmVendedor: TfrmVendedor
           Font.Style = []
           ParentFont = False
           OnClick = cxAlterarClick
+          ExplicitHeight = 51
         end
       end
     end
@@ -326,10 +346,6 @@ object frmVendedor: TfrmVendedor
       Caption = 'Cadastro'
       ImageIndex = 1
       TabVisible = False
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 577
-      ExplicitHeight = 302
       object Panel1: TPanel
         Left = 0
         Top = 0
@@ -340,8 +356,6 @@ object frmVendedor: TfrmVendedor
         Color = clWhite
         ParentBackground = False
         TabOrder = 0
-        ExplicitWidth = 577
-        ExplicitHeight = 218
         object Label1: TLabel
           Left = 76
           Top = 38
@@ -402,7 +416,7 @@ object frmVendedor: TfrmVendedor
           Left = 128
           Top = 37
           Width = 63
-          Height = 21
+          Height = 23
           TabStop = False
           CharCase = ecUpperCase
           Ctl3D = False
@@ -423,7 +437,7 @@ object frmVendedor: TfrmVendedor
           Left = 128
           Top = 73
           Width = 438
-          Height = 21
+          Height = 23
           CharCase = ecUpperCase
           Ctl3D = False
           DataField = 'NOME'
@@ -454,7 +468,7 @@ object frmVendedor: TfrmVendedor
           Left = 128
           Top = 109
           Width = 182
-          Height = 21
+          Height = 23
           CharCase = ecUpperCase
           Ctl3D = False
           DataField = 'CMA'
@@ -472,7 +486,7 @@ object frmVendedor: TfrmVendedor
           Left = 128
           Top = 145
           Width = 182
-          Height = 21
+          Height = 23
           CharCase = ecUpperCase
           Ctl3D = False
           DataField = 'CMP'
@@ -499,12 +513,9 @@ object frmVendedor: TfrmVendedor
         Margins.Bottom = 0
         Align = alBottom
         BevelOuter = bvNone
-        Color = clWhite
+        Color = 15724527
         ParentBackground = False
         TabOrder = 1
-        ExplicitLeft = -128
-        ExplicitTop = 436
-        ExplicitWidth = 820
         object cxSair: TcxButton
           AlignWithMargins = True
           Left = 164
@@ -517,8 +528,16 @@ object frmVendedor: TfrmVendedor
           Margins.Bottom = 7
           Align = alLeft
           Caption = 'ESC | Sair'
+          Colors.Default = 12153715
+          Colors.DefaultText = clWhite
+          Colors.Normal = 12153715
+          Colors.NormalText = clWhite
+          Colors.Hot = 12153715
+          Colors.HotText = clWhite
+          Colors.Disabled = clGray
+          Colors.DisabledText = clSilver
           LookAndFeel.NativeStyle = False
-          LookAndFeel.SkinName = 'DevExpressDarkStyle'
+          LookAndFeel.SkinName = ''
           OptionsImage.Glyph.SourceDPI = 96
           OptionsImage.Glyph.Data = {
             89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -559,8 +578,16 @@ object frmVendedor: TfrmVendedor
           Margins.Bottom = 7
           Align = alLeft
           Caption = 'F5 | Salvar'
+          Colors.Default = 12153715
+          Colors.DefaultText = clWhite
+          Colors.Normal = 12153715
+          Colors.NormalText = clWhite
+          Colors.Hot = 12153715
+          Colors.HotText = clWhite
+          Colors.Disabled = clGray
+          Colors.DisabledText = clSilver
           LookAndFeel.NativeStyle = False
-          LookAndFeel.SkinName = 'DevExpressDarkStyle'
+          LookAndFeel.SkinName = ''
           OptionsImage.Glyph.SourceDPI = 96
           OptionsImage.Glyph.Data = {
             89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -595,7 +622,7 @@ object frmVendedor: TfrmVendedor
     Top = 224
   end
   object frxReport: TfrxReport
-    Version = '6.8.6'
+    Version = '6.9.12'
     DataSetName = 'frxDBCo'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
@@ -650,6 +677,10 @@ object frmVendedor: TfrmVendedor
       MirrorMode = []
       object Totais: TfrxReportSummary
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Font.Charset = ANSI_CHARSET
         Font.Color = clBlack
@@ -671,6 +702,10 @@ object frmVendedor: TfrmVendedor
       end
       object Cabecalho: TfrxColumnHeader
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 22.677180000000000000
         Top = 177.637910000000000000
@@ -742,6 +777,10 @@ object frmVendedor: TfrmVendedor
       end
       object MasterData1: TfrxMasterData
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 22.080000000000000000
         Top = 260.787570000000000000
@@ -813,6 +852,10 @@ object frmVendedor: TfrmVendedor
       end
       object PageHeader1: TfrxPageHeader
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 134.400000000000000000
         Top = 18.897650000000000000
@@ -964,6 +1007,10 @@ object frmVendedor: TfrmVendedor
       end
       object PageFooter1: TfrxPageFooter
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 28.800000000000000000
         Top = 377.953000000000000000

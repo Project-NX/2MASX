@@ -10,7 +10,7 @@ uses
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
   FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
   Vcl.Imaging.pngimage, dxSkinDevExpressDarkStyle, cxGraphics, cxLookAndFeels,
-  cxLookAndFeelPainters, Vcl.Menus, cxButtons;
+  cxLookAndFeelPainters, Vcl.Menus, cxButtons, dxSkinsCore;
 
 type
   TFrmUsuarios = class(TForm)

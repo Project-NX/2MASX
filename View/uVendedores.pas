@@ -14,7 +14,7 @@ uses
   DBCtrlsEh, ACBrBase, ACBrEnterTab, frxClass, frxDBSet, frxExportPDF,
   frxExportBaseDialog, DBGridEh, DBLookupEh, frxExportXLS, JvComponentBase,
   JvEnterTab, dxSkinDevExpressDarkStyle, cxGraphics, cxLookAndFeels,
-  cxLookAndFeelPainters, Vcl.Menus, cxButtons;
+  cxLookAndFeelPainters, Vcl.Menus, cxButtons, dxSkinsCore;
 
 type
   TfrmVendedor = class(TForm)

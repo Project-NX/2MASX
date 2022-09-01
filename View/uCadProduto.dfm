@@ -5,7 +5,7 @@ object FrmCadProduto: TFrmCadProduto
   Caption = 'Sistema ERP - Cadastro de Produtos'
   ClientHeight = 590
   ClientWidth = 1018
-  Color = 5723991
+  Color = 12153715
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -2607,8 +2607,17 @@ object FrmCadProduto: TFrmCadProduto
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'ESC | Sair'
+      Colors.Default = 12153715
+      Colors.DefaultText = clGray
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Pressed = 12153715
+      Colors.PressedText = clWhite
+      Colors.Disabled = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -2649,8 +2658,17 @@ object FrmCadProduto: TFrmCadProduto
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F5 | Salvar'
+      Colors.Default = 12153715
+      Colors.DefaultText = clGray
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Pressed = 12153715
+      Colors.PressedText = clWhite
+      Colors.Disabled = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098

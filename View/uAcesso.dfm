@@ -29059,7 +29059,6 @@ object frmAcesso: TfrmAcesso
         Font.Style = []
         ParentFont = False
         TabOrder = 0
-        ExplicitWidth = 231
       end
       object Panel1: TPanel
         Left = 0
@@ -29072,8 +29071,6 @@ object frmAcesso: TfrmAcesso
         Color = clSilver
         ParentBackground = False
         TabOrder = 1
-        ExplicitTop = 44
-        ExplicitWidth = 231
       end
     end
     object pnl_senha: TPanel
@@ -29086,7 +29083,7 @@ object frmAcesso: TfrmAcesso
       object lbl_senha: TLabel
         Left = 0
         Top = 10
-        Width = 45
+        Width = 35
         Height = 17
         Caption = 'Senha'
         Font.Charset = DEFAULT_CHARSET
@@ -29115,8 +29112,6 @@ object frmAcesso: TfrmAcesso
         ParentFont = False
         PasswordChar = '*'
         TabOrder = 1
-        ExplicitTop = 22
-        ExplicitWidth = 231
       end
       object pnl_barra_senha: TPanel
         Left = 0
@@ -29129,8 +29124,6 @@ object frmAcesso: TfrmAcesso
         Color = clSilver
         ParentBackground = False
         TabOrder = 0
-        ExplicitTop = 44
-        ExplicitWidth = 231
       end
     end
     object CbEmpresa: TSWHDBLookupComboBox
@@ -29169,8 +29162,8 @@ object frmAcesso: TfrmAcesso
       OnClick = cxButtonConfirmaClick
     end
     object CbUsuario: TSWHDBLookupComboBox
-      Left = 383
-      Top = 3
+      Left = 399
+      Top = 27
       Width = 137
       Height = 28
       Cursor = crHandPoint

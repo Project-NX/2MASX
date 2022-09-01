@@ -6,7 +6,7 @@ object frmCompra: TfrmCompra
   Caption = 'Compras'
   ClientHeight = 739
   ClientWidth = 1018
-  Color = 5723991
+  Color = 7300181
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -27,7 +27,7 @@ object frmCompra: TfrmCompra
     Left = 7
     Top = 91
     Width = 1004
-    Height = 504
+    Height = 513
     Margins.Left = 7
     Margins.Top = 0
     Margins.Right = 7
@@ -47,11 +47,12 @@ object frmCompra: TfrmCompra
       'Cancelada')
     TabIndex = 0
     OnChange = TabSet1Change
+    ExplicitHeight = 504
     object DBGrid1: TDBGrid
       Left = 4
       Top = 28
       Width = 996
-      Height = 472
+      Height = 481
       Align = alClient
       DataSource = dsCompra
       GradientEndColor = 15529196
@@ -129,7 +130,7 @@ object frmCompra: TfrmCompra
   object Panel1: TPanel
     AlignWithMargins = True
     Left = 7
-    Top = 595
+    Top = 604
     Width = 1004
     Height = 41
     Margins.Left = 7
@@ -140,6 +141,7 @@ object frmCompra: TfrmCompra
     Color = 16514043
     ParentBackground = False
     TabOrder = 0
+    ExplicitTop = 595
     object LblSaldo: TLabel
       Left = 633
       Top = 10
@@ -471,9 +473,9 @@ object frmCompra: TfrmCompra
   object Panel5: TPanel
     AlignWithMargins = True
     Left = 7
-    Top = 643
+    Top = 652
     Width = 1004
-    Height = 89
+    Height = 80
     Margins.Left = 7
     Margins.Top = 7
     Margins.Right = 7
@@ -485,18 +487,26 @@ object frmCompra: TfrmCompra
     TabOrder = 4
     object cxAlterar: TcxButton
       AlignWithMargins = True
-      Left = 124
+      Left = 134
       Top = 7
-      Width = 110
-      Height = 75
+      Width = 120
+      Height = 66
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F3 | Alterar'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -535,18 +545,26 @@ object frmCompra: TfrmCompra
     end
     object cxAtualizar: TcxButton
       AlignWithMargins = True
-      Left = 358
+      Left = 388
       Top = 7
-      Width = 110
-      Height = 75
+      Width = 120
+      Height = 66
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F5 | Atualizar'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -587,18 +605,26 @@ object frmCompra: TfrmCompra
     end
     object cxPDF: TcxButton
       AlignWithMargins = True
-      Left = 826
+      Left = 896
       Top = 7
-      Width = 110
-      Height = 75
+      Width = 104
+      Height = 66
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F9 | Fechar M'#234's'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -632,21 +658,30 @@ object frmCompra: TfrmCompra
       Font.Style = []
       ParentFont = False
       OnClick = cxPDFClick
+      ExplicitLeft = 912
     end
     object cxNovo: TcxButton
       AlignWithMargins = True
       Left = 7
       Top = 7
-      Width = 110
-      Height = 75
+      Width = 120
+      Height = 66
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F2 | Novo'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -690,18 +725,26 @@ object frmCompra: TfrmCompra
     end
     object cxCancelar: TcxButton
       AlignWithMargins = True
-      Left = 241
+      Left = 261
       Top = 7
-      Width = 110
-      Height = 75
+      Width = 120
+      Height = 66
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F4 | Cancelar'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -747,18 +790,26 @@ object frmCompra: TfrmCompra
     end
     object cxLerXML: TcxButton
       AlignWithMargins = True
-      Left = 475
+      Left = 515
       Top = 7
-      Width = 110
-      Height = 75
+      Width = 120
+      Height = 66
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F6 | Ler XML'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -796,18 +847,26 @@ object frmCompra: TfrmCompra
     end
     object cxVisualizar: TcxButton
       AlignWithMargins = True
-      Left = 709
+      Left = 769
       Top = 7
-      Width = 110
-      Height = 75
+      Width = 120
+      Height = 66
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F8 | Visualizar'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -850,18 +909,26 @@ object frmCompra: TfrmCompra
     end
     object cxImprimir: TcxButton
       AlignWithMargins = True
-      Left = 592
+      Left = 642
       Top = 7
-      Width = 110
-      Height = 75
+      Width = 120
+      Height = 66
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F7 | Imprimir'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -1328,7 +1395,7 @@ object frmCompra: TfrmCompra
     Top = 240
   end
   object frxReport: TfrxReport
-    Version = '6.8.6'
+    Version = '6.9.12'
     DataSetName = 'frxDBCo'
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
@@ -1375,6 +1442,10 @@ object frmCompra: TfrmCompra
       MirrorMode = []
       object Titulo: TfrxReportTitle
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 94.488250000000000000
         Top = 18.897650000000000000
@@ -1613,6 +1684,10 @@ object frmCompra: TfrmCompra
       end
       object Cabecalho: TfrxColumnHeader
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 22.677180000000000000
         Top = 136.063080000000000000
@@ -1750,6 +1825,10 @@ object frmCompra: TfrmCompra
       end
       object Totais: TfrxReportSummary
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Font.Charset = ANSI_CHARSET
         Font.Color = clBlack
@@ -2234,6 +2313,10 @@ object frmCompra: TfrmCompra
       end
       object Itens: TfrxMasterData
         FillType = ftBrush
+        FillGap.Top = 0
+        FillGap.Left = 0
+        FillGap.Bottom = 0
+        FillGap.Right = 0
         Frame.Typ = []
         Height = 18.897650000000000000
         Top = 219.212740000000000000

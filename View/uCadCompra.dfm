@@ -5,9 +5,9 @@ object frmCadCompra: TfrmCadCompra
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Compras'
-  ClientHeight = 739
-  ClientWidth = 1018
-  Color = 5723991
+  ClientHeight = 657
+  ClientWidth = 1024
+  Color = 12153715
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -26,8 +26,8 @@ object frmCadCompra: TfrmCadCompra
   object Panel2: TPanel
     AlignWithMargins = True
     Left = 7
-    Top = 541
-    Width = 1004
+    Top = 468
+    Width = 1010
     Height = 119
     Margins.Left = 7
     Margins.Top = 7
@@ -38,6 +38,8 @@ object frmCadCompra: TfrmCadCompra
     Color = clWhite
     ParentBackground = False
     TabOrder = 2
+    ExplicitTop = 541
+    ExplicitWidth = 1004
     object GroupBox1: TGroupBox
       AlignWithMargins = True
       Left = 3
@@ -53,9 +55,6 @@ object frmCadCompra: TfrmCadCompra
       Font.Style = []
       ParentFont = False
       TabOrder = 0
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitHeight = 108
       object DBCheckBox2: TDBCheckBox
         Left = 6
         Top = 27
@@ -98,7 +97,7 @@ object frmCadCompra: TfrmCadCompra
       AlignWithMargins = True
       Left = 166
       Top = 3
-      Width = 835
+      Width = 841
       Height = 113
       Align = alClient
       Caption = 'Totais'
@@ -109,9 +108,7 @@ object frmCadCompra: TfrmCadCompra
       Font.Style = []
       ParentFont = False
       TabOrder = 1
-      ExplicitLeft = 157
-      ExplicitTop = 0
-      ExplicitHeight = 108
+      ExplicitWidth = 835
       object Label11: TLabel
         Left = 12
         Top = 25
@@ -658,7 +655,7 @@ object frmCadCompra: TfrmCadCompra
     AlignWithMargins = True
     Left = 7
     Top = 7
-    Width = 1004
+    Width = 1010
     Height = 98
     Margins.Left = 7
     Margins.Top = 7
@@ -675,7 +672,7 @@ object frmCadCompra: TfrmCadCompra
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
-    ExplicitTop = 6
+    ExplicitWidth = 1004
     object Label1: TLabel
       Left = 11
       Top = 9
@@ -1011,7 +1008,6 @@ object frmCadCompra: TfrmCadCompra
         TabOrder = 0
         OnChange = DBEdit27Change
         OnKeyDown = DBEdit27KeyDown
-        ExplicitWidth = 713
       end
       object DBGridPessooa: TDBGridEh
         Left = 0
@@ -1064,8 +1060,8 @@ object frmCadCompra: TfrmCadCompra
     AlignWithMargins = True
     Left = 7
     Top = 112
-    Width = 1004
-    Height = 422
+    Width = 1010
+    Height = 349
     Margins.Left = 7
     Margins.Top = 0
     Margins.Right = 7
@@ -1081,20 +1077,18 @@ object frmCadCompra: TfrmCadCompra
     ParentBackground = False
     ParentFont = False
     TabOrder = 1
-    ExplicitLeft = 0
-    ExplicitTop = 91
-    ExplicitWidth = 992
-    ExplicitHeight = 350
+    ExplicitWidth = 1004
+    ExplicitHeight = 422
     object Panel5: TPanel
       Left = 0
-      Top = 366
-      Width = 1004
+      Top = 293
+      Width = 1010
       Height = 56
       Align = alBottom
       BevelOuter = bvNone
       TabOrder = 0
-      ExplicitTop = 294
-      ExplicitWidth = 992
+      ExplicitTop = 366
+      ExplicitWidth = 1004
       object grpSelecao: TGroupBox
         Left = 0
         Top = 0
@@ -1141,8 +1135,8 @@ object frmCadCompra: TfrmCadCompra
     object PageControl1: TPageControl
       Left = 0
       Top = 0
-      Width = 1004
-      Height = 366
+      Width = 1010
+      Height = 293
       ActivePage = TabSheet1
       Align = alClient
       Font.Charset = ANSI_CHARSET
@@ -1153,12 +1147,14 @@ object frmCadCompra: TfrmCadCompra
       ParentFont = False
       TabOrder = 1
       TabStop = False
+      ExplicitWidth = 1004
+      ExplicitHeight = 366
       object TabSheet1: TTabSheet
         Caption = 'Itens Compra'
         object Label28: TLabel
           Left = 0
           Top = 0
-          Width = 996
+          Width = 1002
           Height = 15
           Align = alTop
           Caption = '     Clique na tecla [CTRL + DELETE] para excluir ITEM'
@@ -1173,8 +1169,8 @@ object frmCadCompra: TfrmCadCompra
         object DBGridEh1: TDBGridEh
           Left = 0
           Top = 15
-          Width = 996
-          Height = 321
+          Width = 1002
+          Height = 248
           Hint = 'D'#234' Duplo Click para Alterar os Dados Produto'
           Align = alClient
           DataSource = dsItens
@@ -1451,9 +1447,9 @@ object frmCadCompra: TfrmCadCompra
   object Panel6: TPanel
     AlignWithMargins = True
     Left = 7
-    Top = 667
-    Width = 1004
-    Height = 65
+    Top = 594
+    Width = 1010
+    Height = 56
     Margins.Left = 7
     Margins.Top = 7
     Margins.Right = 7
@@ -1463,22 +1459,29 @@ object frmCadCompra: TfrmCadCompra
     Color = clWhite
     ParentBackground = False
     TabOrder = 3
-    ExplicitTop = 599
-    ExplicitWidth = 1000
+    ExplicitTop = 632
     object cxProdutos: TcxButton
       AlignWithMargins = True
       Left = 164
       Top = 7
       Width = 150
-      Height = 51
+      Height = 42
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F4 | Produtos'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -1515,13 +1518,14 @@ object frmCadCompra: TfrmCadCompra
       Font.Style = []
       ParentFont = False
       OnClick = cxProdutosClick
+      ExplicitHeight = 51
     end
     object cxSair: TcxButton
       AlignWithMargins = True
       Left = 478
       Top = 7
       Width = 150
-      Height = 51
+      Height = 42
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
@@ -1530,8 +1534,16 @@ object frmCadCompra: TfrmCadCompra
       Align = alLeft
       BiDiMode = bdLeftToRight
       Caption = 'ESC | Sair'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -1562,21 +1574,30 @@ object frmCadCompra: TfrmCadCompra
       Font.Style = []
       ParentFont = False
       OnClick = cxSairClick
+      ExplicitHeight = 51
     end
     object cxPessoas: TcxButton
       AlignWithMargins = True
       Left = 321
       Top = 7
       Width = 150
-      Height = 51
+      Height = 42
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F5 | Pessoas'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -1613,21 +1634,30 @@ object frmCadCompra: TfrmCadCompra
       Font.Style = []
       ParentFont = False
       OnClick = cxPessoasClick
+      ExplicitHeight = 51
     end
     object cxFinalizar: TcxButton
       AlignWithMargins = True
       Left = 7
       Top = 7
       Width = 150
-      Height = 51
+      Height = 42
       Margins.Left = 7
       Margins.Top = 7
       Margins.Right = 0
       Margins.Bottom = 7
       Align = alLeft
       Caption = 'F3 | Finalizar'
+      Colors.Default = 12153715
+      Colors.DefaultText = clWhite
+      Colors.Normal = 12153715
+      Colors.NormalText = clWhite
+      Colors.Hot = 12153715
+      Colors.HotText = clWhite
+      Colors.Disabled = clGray
+      Colors.DisabledText = clSilver
       LookAndFeel.NativeStyle = False
-      LookAndFeel.SkinName = 'DevExpressDarkStyle'
+      LookAndFeel.SkinName = ''
       OptionsImage.Glyph.SourceDPI = 96
       OptionsImage.Glyph.Data = {
         89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
@@ -1652,6 +1682,7 @@ object frmCadCompra: TfrmCadCompra
       Font.Style = []
       ParentFont = False
       OnClick = cxFinalizarClick
+      ExplicitHeight = 51
     end
   end
   object dsCompra: TDataSource
